@@ -1,38 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <!-- menghubungkan file CSS eksternal -->
-    <title>Website Responsif</title>
+    <title>TopUpZone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Selamat datang di Website Kami</h1>
+        <div class="logo">CodeZone</div>
         <nav>
             <a href="#">Beranda</a>
-            <a href="#">Tentang Kami</a>
-            <a href="#">Layanan</a>
+            <a href="#">Top Up</a>
+            <a href="#">Tentang</a>
             <a href="#">Kontak</a>
         </nav>
+        <button class="login-btn">Masuk</button>
     </header>
-    <main>
-        <section class="content">
-            <h2>Tentang Kami</h2>
-            <p>
-                Kami adalah perusahaan yang berfokus pada pengembangan web dan teknologi.
-            </p>
-        </section>
-        <section class="content">
-            <h2>Layanan Kami</h2>
-            <ul>
-                <li>Desain Web</li>
-                <li>Pengembangan Aplikasi</li>
-                <li>Optimasi SEO</li>
-            </ul>
-        </section>
-    </main>
-    <footer>&copy; 2023 Website Responsif. Hak Cipta Dilindungi.</footer>
+
+    <section class="hero">
+        <h1>Ambil Kelas bahasa pemrograman minatmu</h1>
+        <p>Cepat, aman, dan terpercaya — Belajar jadi makin mudah!</p>
+        <a href="#" class="btn-utama">Mulai Kelas</a>
+    </section>
+
+    <section class="produk">
+        <h2>Pilihan Bahasa Pemrograman Populer</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="gambar/Javascript_Logo_PNG-removebg-preview.png" alt="javascript">
+                <h3>JavaScript</h3>
+                <p>Mulai dari Rp100.000</p>
+                <a href="artikel.html" class="btn-beli">Ambil Kelas</a>
+            </div>
+            <div class="card">
+                <img src="gambar/C++_Logo_PNG-removebg-preview.png" alt="c++">
+                <h3>C++</h3>
+                <p>Mulai dari Rp50.000</p>
+                <a href="artikel.html" class="btn-beli">Ambil Kelas</a>
+            </div>
+            <div class="card">
+                <img src="gambar/Python_Logo_PNG-removebg-preview.png" alt="Python">
+                <h3>Python</h3>
+                <p>Mulai dari Rp80.000</p>
+                <a href="artikel.html" class="btn-beli">Ambil Kelas</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>&copy;2025 CodeZone | Kelas pembelajaran bahasa pemrograman</footer>
 </body>
 </html>
