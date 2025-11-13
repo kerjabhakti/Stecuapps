@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artikel Singkat - CodeZone</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .artikel {
+      padding: 40px 18px;
+      max-width: 1000px;
+      margin: 0 auto 60px;
+    }
+    .artikel h2.section-title {
+      font-size: 28px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .artikel-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: 0 6px 18px rgba(12,12,12,0.06);
+      line-height: 1.55;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .artikel-card h3 { margin: 0 0 6px 0; font-size: 18px; }
+    .artikel-card p.lead { margin: 0; color: #444; font-weight: 600;}
+    .artikel-card p { margin: 6px 0 0 0; color: #333; font-size: 14px; flex:1; }
+    .tag {
+      display:inline-block;
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(0,0,0,0.06);
+      color:#111;
+      text-decoration:none;
+      margin-top:10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CodeZone</div>
+    <nav>
+      <a href="">Beranda</a>
+      <a href="#">Top Up</a>
+      <a href="#">Tentang</a>
+      <a href="#">Kontak</a>
+    </nav>
+    <button class="login-btn">Masuk</button>
+  </header>
+
+  <section class="hero">
+    <h1>Ambil Kelas bahasa pemrograman minatmu</h1>
+    <p>Cepat, aman, dan terpercaya — Belajar jadi makin mudah!</p>
+    <a href="#" class="btn-utama">Mulai Kelas</a>
+  </section>
+
+  <section class="artikel" id="artikel">
+    <h2 class="section-title">Ringkasan Singkat: JavaScript · C++ · Python</h2>
+
+    <div class="cards">
+
+      <article class="artikel-card" id="js">
+        <h3>JavaScript</h3>
+        <p class="lead">Bahasa skrip untuk web yang dinamis.</p>
+        <p>
+          JavaScript adalah bahasa pemrograman yang berjalan di browser dan juga di server
+          (dengan Node.js). Cocok untuk membuat antarmuka interaktif — dari manipulasi DOM,
+          animasi, sampai aplikasi single-page (SPA). Kelebihannya: ekosistem besar (npm),
+          banyak framework populer seperti React/Vue/Angular, dan learning curve yang ramah
+          untuk pemula. Cocok kalau lo mau cepat bikin prototipe front-end atau web app.
+        </p>
+        <span class="tag">Front-end · Full-stack</span>
+      </article>
+
+      <article class="artikel-card" id="cpp">
+        <h3>C++</h3>
+        <p class="lead">Bahasa performa tinggi untuk sistem & game.</p>
+        <p>
+          C++ populer di pengembangan software yang butuh performa tinggi: game engine,
+          sistem operasi, dan aplikasi real-time. Sintaksnya lebih kompleks (manajemen memori,
+          pointer), tapi memberi kontrol mendalam terhadap resource. Pelajari kalau lo tertarik
+          ke bidang sistem, embedded, atau pengembangan game AAA.
+        </p>
+        <span class="tag">Sistem · Performa</span>
+      </article>
+
+      <article class="artikel-card" id="python">
+        <h3>Python</h3>
+        <p class="lead">Bahasa serbaguna yang mudah dipelajari.</p>
+        <p>
+          Python terkenal karena sintaksnya yang bersih dan produktivitas tinggi. Banyak dipakai
+          di data science, machine learning, scripting, otomasi, dan web backend (Django/Flask).
+          Ekosistem paketnya luas (pandas, NumPy, scikit-learn, TensorFlow). Pilihan tepat untuk
+          mahasiswa yang ingin cepat membangun prototipe atau masuk ke data-oriented career.
+        </p>
+        <span class="tag">Data · Scripting · Backend</span>
+      </article>
+
+    </div>
+  </section>
+  <footer>&copy;2025 CodeZone | Kelas pembelajaran bahasa pemrograman</footer>
+
+</body>
+</html>
