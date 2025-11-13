@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>js menampilkan maps</h1>
+    <p>maps</p>
+    <button onclick="lokasi()">Klik disini</button>
+    <p id="Jajang"></p>
+    <script>
+        const x = document.getElementById("Jajang");
+        function lokasi(){
+            try {
+                navigator.geolocation.getCurrentPosition(liatlokasi);
+            } catch {
+                x.innerHTML = err;
+            }
+        }
+        function liatlokasi(posisi){
+            x.innerHTML =
+            "ping  :  "  +
+            posisi.coords.ping +
+            "<br> posisisaya : " +
+            posisi.coords.posisisaya;
+        }
+    </script>
+</body>
+</html>
