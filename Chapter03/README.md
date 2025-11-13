@@ -1,10 +1,5 @@
-# Tugas Chapter03
-1. Buatlah 1 buat tampilan website yang didalamnya berisi dengan file HTML dan CSS (Cascading Style Sheet)
-2. Studi kasus masing-masing wajib berbeda satu sama lain
-3. Jika ada kesamaan maka nilai keduanya akan dikurangi
-4. Terindikasi plagiat/copas nilai 0 (Nol)
-5. Tugas terdiri dari :
-- Folder : NPM_NAMA
-- Berisi README.md (Deskripsikan apa yang dikerjakan)
-- Index.html & Style.css dll (sesuai kebutuhan) [Bobot 40]
-- Terdapat link pada masing-masing website [Bobot 60]
+# Chapter 3
+
+Di chapter ini saya mempelajari penggunaan CSS dalam sebuah tampilan HTML.
+Mulai dari pembuatan container, font-family, header, footer, dan nav.
+Selain itu juga mempelajari penggunaan inline CSS dan ekternal CSS.
