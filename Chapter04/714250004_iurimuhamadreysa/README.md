@@ -22,44 +22,37 @@ A.Teknik Kunci CSS:
     menurut saya: Agar gambar terlihat rapi dan seragam seperti yang disarankan pada diskusi sebelumnya, Anda perlu menambahkan properti `width`, `height`, dan `object-fit: cover;` pada gambar di dalam `li`.
 Efek Transformasi (*Hover*):
     css
-    #img-posisi li:hover img {
+   #img-posisi li:hover {
         transform: scale(1.1);
         transition: transform 0.7s ease;
     }
 
-    Perbaikan: Dalam kode CSS Anda, selektor ditulis sebagai `#img-posisi hover`. Ini perlu diperbaiki menjadi `#img-posisi li:hover img` atau `#img-posisi li:hover` agar efek zoom diterapkan pada gambar (atau item daftar) saat mouse diarahkan ke *list item* tersebut. Saya asumsikan Anda ingin men-zoom gambar itu sendiri.
-* **Styling Umum:** Properti `font-family`, `font-size`, dan `text-align` digunakan untuk mengatur tipografi konten.
+   untuk zoom gambar saat disentuh dengan scale 1,1.
 
-### Perbaikan CSS yang Disarankan
+Styling Umum: Properti `font-family`, `font-size`, dan `text-align` digunakan untuk mengatur tipografi konten.
+Disini tuh belum rapih semuanya dikarenakan belum menguasai element element yang dimana saya harus belajar lagi jadi penjelasan lebih lanjut ada dibawah 
 
-Untuk membuat galeri menu rapi dan interaktif seperti yang Anda inginkan, Anda perlu **memperbaiki selektor *hover*** dan **menambahkan Flexbox** pada `li`.
+1. dsini ada desain yang saya gunakan 
+Tema Kontras: Menggunakan latar belakang gelap (#0e0d0d) untuk halaman secara keseluruhan, sementara konten informasi utama (sambutan, tentang kami, kontak) disajikan dalam kotak putih yang memiliki border aksen warna pink/magenta.
 
-**Tambahkan/Modifikasi CSS di `styles.css`:**
+Tata Letak Sentral: Semua konten terpusat (dikelompokkan di tengah layar) dalam container utama.
 
-```css
-/* Perbaikan untuk selektor hover */
-#img-posisi li:hover img { 
-    transform: scale(1.1);
-    transition: transform 0.7s ease;
-}
+2. Fitur Utama
+Navigasi: Terdapat bilah navigasi sederhana (Beranda, Menu, Kontak) dengan latar belakang hitam.
 
-/* Flexbox untuk mengatur layout vertikal (gambar di atas teks) */
-#img-posisi li {
-    display: flex;
-    flex-direction: column; /* Menumpuk gambar dan teks */
-    align-items: center; /* Memusatkan secara horizontal */
-    
-    /* Properti lain dari li tetap dipertahankan atau disesuaikan */
-    margin: 20px; 
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-}
+Galeri Menu Andalan: Bagian ul#img-posisi menampilkan empat menu andalan (Cireng, Pisang Caramel, Seblak, Krepes) dalam format galeri yang rapi.
 
-/* Menetapkan ukuran gambar yang seragam dan rapi */
-#img-posisi li img {
-    width: 225px; 
-    height: 225px; /* Menyamakan tinggi dengan lebar */
-    object-fit: cover; /* Menjaga proporsi tanpa menjadi gepeng */
-    border-radius: 10px;
-}
+Setiap foto dibuat seragam (ukuran sama) dan dilengkapi dengan efek zoom halus (transform: scale) saat pengguna mengarahkan kursor ke atasnya (hover).
+
+Konten Informasional: Tiga bagian utama (.main-content, .about-us, .content) menyajikan informasi penting:
+
+Sambutan hangat.
+
+Sejarah singkat warung (berdiri sejak 2000).
+
+Alamat fisik dan media sosial.
+
+3. Fungsi Kode
+HTML: Menyusun semua elemen konten (judul, tautan, gambar, paragraf) dan mengaitkannya dengan file style eksternal (styles.css).
+
+CSS: Bertanggung jawab penuh untuk merapikan dan menata elemen, termasuk membuat foto-foto menu terlihat seragam, menyebarkan item galeri, serta mengatur warna dan border pada setiap bagian konten.
