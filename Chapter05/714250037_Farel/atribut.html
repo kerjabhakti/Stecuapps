@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnerHTML JavaScript</title>
+    <style>
+        .lampubiru {
+            background-color: rgb(0, 22, 192);
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .lampumerah {
+            background-color: rgb(218, 0, 0);
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>Apa yang bisa dilakukan oleh JavaScript?</p>
+
+    <button
+        class="lampubiru"
+        onclick="document.getElementById('myImage').src='aset/pic_bulbon.gif'"
+    >
+        lampu mati
+    </button>
+
+    <img id="myImage" src="biru.jpeg" style="width: 100px;" />
+
+    <button
+        class="lampumerah"
+        onclick="document.getElementById('myImage').src='aset/pic_bulboff.gif'"
+    >
+        lampu nyala
+    </button>
+</body>
+</html>
