@@ -1,0 +1,246 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+header {
+  background: #0073e6;
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+/* Hero dengan ilustrasi mockup */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: white;
+}
+.hero-text {
+  flex: 1 1 350px;
+  padding: 1rem;
+  animation: fadeIn 1s ease forwards;
+}
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0073e6;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+.hero-img {
+  flex: 1 1 500px;
+  text-align: center;
+  animation: slideIn 1s ease forwards;
+}
+.hero-img img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+/* Card Grid untuk daftar kursus unggulan */
+.courses {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.course-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.course-card:hover {
+  transform: translateY(-10px);
+}
+.course-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.course-content {
+  padding: 1rem;
+}
+.course-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.course-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.course-features {
+  font-size: 0.85rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #777;
+}
+.course-features li {
+  margin-bottom: 0.3rem;
+}
+/* Fitur platform */
+.features {
+  background: #0073e6;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.feature-item {
+  flex: 1 1 250px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+.feature-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.feature-item h3 {
+  margin-bottom: 0.8rem;
+}
+/* Rating / review dinamis */
+.rating {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 0.4rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.rating span {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+.rating span.hover,
+.rating span.selected {
+  color: gold;
+}
+/* FAQ Accordion */
+.faq {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.faq-question {
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  color: #0073e6;
+}
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.faq-question.active::after {
+  content: "-";
+  transform: rotate(180deg);
+}
+.faq-answer {
+  padding: 0 1rem 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-answer.open {
+  max-height: 300px;
+  padding: 1rem;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .features-list {
+    flex-direction: column;
+  }
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Button */
+button {
+  background-color: #0073e6;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #005bb5;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}
