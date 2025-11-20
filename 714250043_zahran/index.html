@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Festival 2025 - Simple</title>
+  <style>
+    :root{--bg:#081022;--accent:#ff4d6d;--accent2:#6bffd9}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,Arial;background:var(--bg);color:#eef;}
+    .wrap{max-width:900px;margin:24px auto;padding:18px}
+    .hero{padding:28px;border-radius:12px;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(255,77,109,0.06),rgba(107,255,217,0.04))}
+    .hero:before{content:"";position:absolute;inset:-20%;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.12;animation:move 10s linear infinite}
+    @keyframes move{to{transform:translateX(40%)}}
+    h1{margin:0 0 6px;font-size:24px}
+    p{margin:0 0 12px;font-size:14px;opacity:.9}
+    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:8px;color:#fff;cursor:pointer}
+    section{margin-top:18px;background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    /* accordion */
+    .acc button{width:100%;text-align:left;padding:10px;border:0;background:transparent;color:inherit;font-weight:700;cursor:pointer}
+    .panel{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 10px}
+    /* performers */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-top:10px}
+    .card{padding:8px;border-radius:8px;text-align:center}
+    .card img{width:100%;height:90px;object-fit:cover;border-radius:6px}
+    /* tickets */
+    .tickets{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .ticket{flex:1 1 140px;padding:10px;border-radius:8px;text-align:center}
+    footer{margin-top:14px;text-align:center;font-size:13px;opacity:.9}
+    @media(max-width:520px){.hero{padding:18px}h1{font-size:20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>Rungkad joyy Festival 2025</h1>
+      <p>Tiga hari musik, gairah yang penuh semangat tapi dengan suasana santai  .</p>
+      <button class="btn" id="buyTop">Buy Tickets</button>
+    </header>
+
+    <main>
+      <section id="lineup">
+        <h3>Lineup </h3>
+        <div class="acc">
+          <button aria-expanded="false">Day 1 — Nov 7</button>
+          <div class="panel"><div style="padding:8px 0">16:00 - Perunggu<br>17:00 - The Panturas <br> 19.00 - stand here alone </div></div>
+        </div>
+        <div class="acc">
+          <button aria-expanded="false">Day 2 — Nov 8</button>
+          <div class="panel"><div style="padding:8px 0">15:00 - The adam<br>16:00 - The Jansen <br> 17.00 - efek rumah kaca</div></div>
+        </div>
+        <div class="acc">
+          <button aria-expanded="false">Day 3 — Nov 9</button>
+          <div class="panel"><div style="padding:8px 0">19:00 - Sunday Eleven<br>20:00 - Donker <br>21.00 - Rebellion Rose</div></div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Performers</h3>
+        <div class="grid">
+  <div class="card">
+    <img src="1.jpg" alt="artist">
+    <div>Rebel</div>
+  </div>
+
+  <div class="card">
+    <img src="2.jpg" alt="artist">
+    <div>Jansen</div>
+  </div>
+
+  <div class="card">
+    <img src="3.jpg" alt="artist">
+    <div>SHA</div>
+  </div>
+</div>
+
+            
+      </section>
+
+      <section id="tickets">
+        <h3>Tickets</h3>
+        <div class="tickets">
+          <div class="ticket">
+            <div>General — IDR 150.000</div>
+            <div style="margin-top:8px"><button class="btn buy">Buy</button></div>
+          </div>
+          <div class="ticket">
+            <div>3-Day — IDR 350.000</div>
+            <div style="margin-top:8px"><button class="btn buy">Buy</button></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>Follow: Ig:rjfest25 • Twitter:rjfest25 • TikTok:rjfest25.</div>
+      <div style="margin-top:6px">see you</div>
+    </footer>
+  </div>
+
+  <script>
+    // simple accordion
+    document.querySelectorAll('.acc').forEach(a=>{
+      const btn = a.querySelector('button'); const panel = a.querySelector('.panel');
+      btn.addEventListener('click', ()=>{
+        const open = a.classList.toggle('open'); btn.setAttribute('aria-expanded', open);
+        panel.style.maxHeight = open ? panel.scrollHeight + 'px' : null;
+      });
+    });
+
+    // buy buttons scroll
+    document.querySelectorAll('.buy, #buyTop').forEach(b=>b.addEventListener('click', ()=>document.getElementById('tickets').scrollIntoView({behavior:'smooth'})));
+  </script>
+</body>
+</html>
