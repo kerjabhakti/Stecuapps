@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee EduLearn Sederhana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-3xl font-extrabold text-sky-600">Bee EduLearn</div>
+            <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#kursus" class="hover:text-sky-600">Kursus</a>
+                <a href="#fitur" class="hover:text-sky-600">Fitur</a>
+                <a href="#faq" class="hover:text-sky-600">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-20 md:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 mb-6">
+                        Kuasai Keahlian <span class="text-sky-600 hero-title-glow">Masa Depan</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-xl lg:max-w-none mx-auto lg:mx-0">
+                        Platform sederhana untuk belajar coding, desain, dan data science.
+                    </p>
+                    <a href="#kursus" class="bg-sky-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg hover:bg-sky-700 transition-all duration-300">
+                        Jelajahi Kursus
+                    </a>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <img src="fotokursus.jpg" alt="Foto seorang pelajar sedang menggunakan laptop" 
+                         class="w-full max-w-md rounded-xl shadow-lg border-2 border-white">
+                </div>
+            </div>
+        </section>
+
+        <section id="kursus" class="py-16 md:py-24 bg-yellow-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">Kursus Unggulan</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 card-hover-effect">
+                        <div class="text-2xl font-bold mb-3 text-sky-700">Web Development Dasar</div>
+                        <p class="text-gray-600 mb-4 text-sm">Belajar HTML, CSS, JavaScript untuk membuat website pertama Anda.</p>
+                        <div class="mb-4">
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="text-sm text-gray-500 ml-2">(4.8)</span>
+                        </div>
+                        <span class="text-xl font-bold text-sky-600">Rp 350.000</span>
+                        <a href="#pendaftaran" class="block mt-4 text-center bg-sky-600 text-white font-semibold py-2 rounded-lg hover:bg-sky-700">
+                            Ambil Kursus
+                        </a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 card-hover-effect">
+                        <div class="text-2xl font-bold mb-3 text-sky-700">Data Entry dan Analisis</div>
+                        <p class="text-gray-600 mb-4 text-sm">Pengantar penggunaan Excel dan Google Sheets untuk analisis data dasar.</p>
+                        <div class="mb-4">
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star text-gray-300">&#9733;</span>
+                            <span class="text-sm text-gray-500 ml-2">(4.1)</span>
+                        </div>
+                        <span class="text-xl font-bold text-sky-600">Rp 200.000</span>
+                        <a href="#pendaftaran" class="block mt-4 text-center bg-sky-600 text-white font-semibold py-2 rounded-lg hover:bg-sky-700">
+                            Ambil Kursus
+                        </a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 card-hover-effect">
+                        <div class="text-2xl font-bold mb-3 text-sky-700">Dasar Desain Grafis</div>
+                        <p class="text-gray-600 mb-4 text-sm">Mempelajari prinsip desain dasar menggunakan perangkat lunak gratis (Canva).</p>
+                        <div class="mb-4">
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="static-star">&#9733;</span>
+                            <span class="text-sm text-gray-500 ml-2">(5.0)</span>
+                        </div>
+                        <span class="text-xl font-bold text-sky-600">Rp 400.000</span>
+                        <a href="#pendaftaran" class="block mt-4 text-center bg-sky-600 text-white font-semibold py-2 rounded-lg hover:bg-sky-700">
+                            Ambil Kursus
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fitur" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">Fitur Utama</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <div class="p-6 text-center rounded-xl border border-sky-200 bg-sky-50 shadow-sm card-hover-effect">
+                        <div class="text-4xl mx-auto text-sky-600 mb-4">📘</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Materi Lengkap</h3>
+                        <p class="text-sm text-gray-600">Modul terstruktur dari dasar hingga mahir.</p>
+                    </div>
+                    
+                    <div class="p-6 text-center rounded-xl border border-lime-200 bg-lime-50 shadow-sm card-hover-effect">
+                        <div class="text-4xl mx-auto text-lime-600 mb-4">💻</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Proyek Praktik</h3>
+                        <p class="text-sm text-gray-600">Terapkan ilmu Anda dengan proyek nyata.</p>
+                    </div>
+
+                    <div class="p-6 text-center rounded-xl border border-sky-200 bg-sky-50 shadow-sm card-hover-effect">
+                        <div class="text-4xl mx-auto text-sky-600 mb-4">♾️</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Akses Selamanya</h3>
+                        <p class="text-sm text-gray-600">Tonton ulang kapan saja Anda mau.</p>
+                    </div>
+
+                    <div class="p-6 text-center rounded-xl border border-lime-200 bg-lime-50 shadow-sm card-hover-effect">
+                        <div class="text-4xl mx-auto text-lime-600 mb-4">💬</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Dukungan Cepat</h3>
+                        <p class="text-sm text-gray-600">Tanya jawab langsung dengan instruktur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq" class="py-16 md:py-24 bg-yellow-50">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">FAQ Sederhana</h2>
+                
+                <div class="space-y-4">
+
+                    <div class="border border-gray-200 rounded-xl p-5 bg-white shadow-sm card-hover-effect">
+                        <h3 class="font-semibold text-gray-900 mb-2">1. Apakah ada sertifikat?</h3>
+                        <p class="text-gray-600 text-sm">Ya, sertifikat elektronik akan diberikan setelah menyelesaikan semua modul.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-xl p-5 bg-white shadow-sm card-hover-effect">
+                        <h3 class="font-semibold text-gray-900 mb-2">2. Bagaimana cara mengakses kursus?</h3>
+                        <p class="text-gray-600 text-sm">Setelah pembelian, kursus dapat diakses melalui portal pelajar di website ini.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-xl p-5 bg-white shadow-sm card-hover-effect">
+                        <h3 class="font-semibold text-gray-900 mb-2">3. Metode pembayaran apa yang tersedia?</h3>
+                        <p class="text-gray-600 text-sm">Kami menerima transfer bank, kartu kredit, dan dompet digital (Gopay/OVO).</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="pendaftaran" class="py-16 md:py-24 bg-white">
+            <div class="max-w-xl mx-auto px-4">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-8">Formulir Pendaftaran</h2>
+                <p class="text-center text-gray-600 mb-8">Isi formulir di bawah untuk mendaftar dan memilih kursus Anda.</p>
+                
+                <form id="registrationForm" action="#" method="POST" class="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-100 space-y-4">
+                    
+                    <div>
+                        <label for="nama" class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required 
+                               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Alamat Email</label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500">
+                    </div>
+
+                    <div>
+                        <label for="kursus-pilihan" class="block text-sm font-medium text-gray-700 mb-1">Kursus Pilihan</label>
+                        <select id="kursus-pilihan" name="kursus-pilihan" required 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 bg-white">
+                            <option value="">-- Pilih Salah Satu Kursus --</option>
+                            <option value="Web Development Dasar">Web Development Dasar (Rp 350.000)</option>
+                            <option value="Data Entry dan Analisis">Data Entry dan Analisis (Rp 200.000)</option>
+                            <option value="Dasar Desain Grafis">Dasar Desain Grafis (Rp 400.000)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Buat Kata Sandi</label>
+                        <input type="password" id="password" name="password" required 
+                               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500">
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-sky-600 text-white font-bold py-3 rounded-xl shadow-md hover:bg-sky-700 transition-all duration-300">
+                            KIRIM PENDAFTARAN
+                        </button>
+                    </div>
+                    
+                </form>
+
+                <div id="formMessage" class="mt-4 p-4 rounded-xl text-center hidden font-semibold" role="alert"></div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 mt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 Bee EduLearn. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
