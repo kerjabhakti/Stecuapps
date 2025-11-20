@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;    
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Mencoba membuat External JavaScript</h2>
+    <p id="demo">Ini paragraf bukan dari file External</p>
+    <button type="button" onclick="myFunction()">Ayo Coba!</button>
+    <p>Contoh link diambil dari "Script.JS".</p>
+    <p>(myfunction harus disimpan di "Script.Js)</p>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+- [x] Remove the button "Daftar Sekarang" below "Kursus Unggulan Kami"
+- [x] Remove the hyperlink "Hubungi via WhatsApp" below "Kursus Unggulan Kami"
+- [x] Tidy up the button and price text in the "Kursus Unggulan Kami" section
