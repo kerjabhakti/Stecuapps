@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background: #f6f6f6;
+    color: #767474;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('hujan.webp');
+   
+    background-size: 100%;
+    animation: moveBG 8s infinite alternate ease-in-out;
+}
+
+@keyframes moveBG {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: white;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+    color: white;
+}
+
+/* SECTION TITLES */
+section h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2rem;
+}
+
+/* PERFORMERS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* ACCORDION LINEUP */
+.accordion-container {
+    max-width: 650px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.accordion {
+    width: 100%;
+    background: white;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.accordion:hover {
+    background: #eee;
+}
+
+.panel {
+    display: none;
+    background: #fff;
+    padding: 15px;
+    border-left: 4px solid #ff6f61;
+    margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* TICKETS */
+.ticket-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.ticket {
+    background: white;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.ticket:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.btn.small {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.socials a {
+    color: #ffcc33;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+/* SIMPLE SCROLL REVEAL */
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: 0.8s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,1 +1,0 @@
-Disini saya membuat website olshop pembelian tas menggunakan HTML dan CSS
