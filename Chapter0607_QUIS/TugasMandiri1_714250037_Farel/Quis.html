@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival Musik 2025</title>
+  <style>
+    body { margin:0; font-family: Arial; background:#2c0085; color:white; }
+    header { height:60vh; display:flex; align-items:center; justify-content:center; text-align:center; position:relative; overflow:hidden; }
+    header::before {
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(45deg, #ff3c5f, #4d4dff, #00fff7);
+      background-size:300% 300%; animation:bgmove 10s infinite linear; z-index:-1;
+    }
+    @keyframes bgmove { 0%{background-position:0 50%} 50%{background-position:100% 50%} 100%{background-position:0 50%} }
+
+    .section { padding:40px 20px; max-width:900px; margin:auto; }
+
+    /* Accordion */
+    .accordion-item { background:#ff3c5f; margin-bottom:10px; border-radius:5px; }
+    .accordion-header { padding:15px; cursor:pointer; }
+    .accordion-body { max-height:0; overflow:hidden; transition:max-height .3s ease; padding:0 15px; }
+
+    /* Performers */
+    .performers { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
+    .card { background:#ff3c5f; border-radius:5px; overflow:hidden; }
+    .card img { width:100%; height:150px; object-fit:cover; }
+    .card div { padding:10px; }
+
+    /* Tickets */
+    .tickets { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
+    .ticket { background:#222; padding:15px; text-align:center; border-radius:5px; }
+
+    button { padding:10px 16px; border:none; border-radius:5px; cursor:pointer; background:#ff3c5f; color:white; }
+
+    footer { text-align:center; padding:20px; background:#222; }
+    footer a { margin:0 10px; color:white; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Festival Musik akhir tahun 2025</h1>
+    <p>Selasa, 30 Desember 2025
+    <p>Stadion GBK, Senayan</p>
+    </p>
+    <button onclick="document.getElementById('tickets').scrollIntoView({behavior:'smooth'})">Buy Tickets</button>
+  </div>
+</header>
+
+<section class="section" id="lineup">
+  <h2>Jadwal Acara</h2>
+
+  <div class="accordion-item">
+    <div class="accordion-header">15.00-18.00</div>
+    <div class="accordion-body"><p>Rizky Febian & Mahalini</p></div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header">19.00-20.00</div>
+    <div class="accordion-body"><p>Seventeen</p></div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header">20.00-selesai</div>
+    <div class="accordion-body"><p>Bruno mars</p></div>
+  </div>
+</section>
+
+<section class="section" id="performers">
+  <h2>Performer</h2>
+  <div class="performers">
+    <div class="card">
+      <img src="Rizky Mahalini.jpeg" />
+      <div>Rizky Febian & Mahalini</div>
+    </div>
+    <div class="card">
+      <img src="Seventeen.jpeg" />
+      <div>Seventeen</div>
+    </div>
+    <div class="card">
+      <img src="Bruno Mars.jpeg" />
+      <div>Bruno Mars</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tickets">
+  <h2>Tiket</h2>
+  <div class="tickets">
+    <div class="ticket">
+      <h3>Regular</h3>
+      <p>Rp 500.000</p>
+      <button>Buy Tickets</button>
+    </div>
+    <div class="ticket">
+      <h3>VIP</h3>
+      <p>Rp 2.000.000</p>
+      <button>Buy Tickets</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Follow Us</p>
+  <a href="#">Instagram</a>
+  <a href="#">Facebook</a>
+  <a href="#">TikTok</a>
+</footer>
+
+<script>
+  const acc = document.querySelectorAll('.accordion-header');
+  acc.forEach(h => {
+    h.onclick = () => {
+      const body = h.nextElementSibling;
+      body.style.maxHeight = body.style.maxHeight ? null : body.scrollHeight + 'px';
+    };
+  });
+</script>
+
+</body>
+</html>
