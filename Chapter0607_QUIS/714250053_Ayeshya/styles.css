@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* Prevents content from hiding behind fixed header */
+    background: linear-gradient(45deg, RED, #440BD4, PURPLE, #04005E);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease infinite;
+    color: white;
+    overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.cta-button {
+    background:hotpink;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px white;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 20px white, 0 0 30px white;
+    transform: scale(1.1);
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    z-index: 100;
+    transition: transform 0.3s ease; /* Smooth slide effect */
+}
+
+.header_text {
+    font-weight: bold;
+    color: #fff;
+}
+
+header.hidden {
+    transform: translateY(-100%); /* Slide up to hide */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://via.placeholder.com/1920x1080?text=Festival+Background') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Lineup */
+.lineup {
+    padding: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.text-lineup {
+    font-size: 2.5em;
+    color: hotpink;
+    text-shadow: 0 0 10px hotpink, 0 0 20px hotpink;
+    margin-top: 50px; 
+    text-align: center
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: pink;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 25px;
+}
+
+.tab-button.active {
+    background: hotpink;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Performers */
+.performers {
+    padding: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px pink;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px pink, 0 0 30px pink;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Tickets */
+.tickets {
+    padding: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.ticket-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ticket {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px pink;
+}
+
+/* Footer */
+.footer {
+    padding: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    color: hotpink;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-link:hover {
+    text-shadow: 0 0 10px hotpink;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards, .ticket-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
