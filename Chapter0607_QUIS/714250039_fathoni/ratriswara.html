@@ -1,90 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RATRI SWARA — Retro Concert</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VibeFest 2025 — Landing Page</title>
   <link rel="stylesheet" href="ratriswara.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <a href="#" class="logo"><div class="logo-texte">RATRI<span>SWARA</span></div></a>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#lineup">Lineup</a></li>
-          <li><a href="#tickets">Tickets</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="nav-buttons">
-        <a class="btn btn-secondary">Sign In</a>
-        <a class="btn btn-primary" id="buyTop">Buy Tickets</a>
+  <!-- HERO -->
+  <header class="hero">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="https://cdn.pixabay.com/vimeo/458725927/retro-53785.mp4?width=1920&hash=fffb7c67f4" type="video/mp4" />
+    </video>
+
+    <div class="hero-inner">
+      <h1 class="neon">RATRI SWARA</h1>
+      <p class="tagline">The Night Breathes in Rhythm</p>
+      <div class="cta-row">
+        <a class="cta" href="#tickets">Buy Tickets</a>
+        <a class="cta ghost" href="#lineup">See Lineup</a>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" id="home">
-    <div class="stripes"></div>
-    <div class="grain"></div>
+  <!-- LINEUP (ACCORDION) -->
+  <main>
+    <section id="lineup" class="section">
+      <h2>Lineup & Schedule</h2>
 
-    <div class="container hero-content">
-      <div>
-        <div class="hero-subtitle"><i class="fas fa-record-vinyl"></i> RETRO NIGHT FESTIVAL</div>
-        <h1 class="hero-title">RATRI SWARA — The Night Breathes in Rhythm</h1>
-        <p class="hero-lead">sebuah konser yang menggabungkan nuansa mistis malam hari dengan keindahan cahaya, ritme, dan emosi yang dalam. Konsep ini menonjolkan atmosfer elegan, misterius, dan memikat, ideal untuk musik pop, folk, elektronik mellow, atau orkestra modern.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" id="heroBuy">Buy Tickets</a>
-          <a class="btn btn-secondary" href="#lineup">See Lineup</a>
+      <button class="accordion" aria-expanded="false">Honeymoon</button>
+      <div class="panel">
+        <ul>
+          <li>18:00 — African Nature</li>
+          <li>18:10 — Rude Girl</li>
+        </ul>
+      </div>
+
+      <button class="accordion" aria-expanded="false">.Feast</button>
+      <div class="panel">
+        <ul>
+          <li>18:30 — Tarot</li>
+          <li>18:40 — Nina</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PERFORMERS -->
+    <section class="section">
+      <h2>Featured Performers</h2>
+      <div class="performers">
+        <article class="card reveal">
+          <img src="honeymonn.jpeg" alt="DJ Nova" />
+          <h3>Honeymoon</h3>
+        </article>
+
+        <article class="card reveal">
+          <img src="feast.jpeg" alt="Luna Star" />
+          <h3>Tikpul Bandung</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- TICKETS -->
+    <section id="tickets" class="section tickets">
+      <h2>Tickets</h2>
+      <div class="tickets-grid">
+        <div class="ticket-box reveal">
+          <h3>Regular</h3>
+          <p class="price">IDR 100.000</p>
+          <p class="desc">Area umum</p>
+          <button class="buy-btn" data-tier="regular">Buy Tickets</button>
+        </div>
+
+        <div class="ticket-box reveal">
+          <h3>VIP</h3>
+          <p class="price">IDR 200.000</p>
+          <p class="desc">Akses VIP • Meet & Greet • Fast lane</p>
+          <button class="buy-btn" data-tier="vip">Buy Tickets</button>
+        </div>
+
+        <div class="ticket-box reveal">
+          <h3>Ultimate Pass</h3>
+          <p class="price">IDR 400.000</p>
+          <p class="desc">Semua fasilitas VIP + Backstage Tour</p>
+          <button class="buy-btn" data-tier="ultimate">Buy Tickets</button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- LINEUP -->
-  <main class="container grid" id="lineup">
-    <div>
-      <h2 class="section-title">Lineup</h2>
-      <div class="card">
-        <div class="accordion-item">
-          <div class="accordion-head"><h4>HoneyMoon</div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-head"><h4>Tikpul Bandung</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TICKETS SIDEBAR -->
-    <aside class="tickets" id="tickets">
-      <h2 class="section-title">Tickets</h2>
-      <div class="ticket-row"><strong>Regular</strong><span class="price">Rp 150.000</span></div>
-      <div class="ticket-row"><strong>VIP</strong><span class="price">Rp 350.000</span></div>
-      <div class="ticket-row"><strong>VVIP</strong><span class="price">Rp 600.000</span></div>
-      <button class="btn btn-primary buy">Buy Now</button>
-    </aside>
+    </section>
   </main>
 
-  <!-- CONTACT -->
-  <footer id="contact">
-    <div class="container">
-      <p>Follow us:</p>
-      <div class="socials">
-        <a><i class="fab fa-instagram"><b><a href="https://www.instagram.com/fathoniabdulj/home"></a></b></i></a>
-        <a><i class="fab fa-facebook"></i></a>
-        <a><i class="fab fa-twitter"></i></a>
-      </div>
-      <p style="margin-top:10px;opacity:.6">© 2025 RATRI SWARA</p>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p>Follow Us</p>
+      <nav class="social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </nav>
+      <p class="copyright">&copy; RATRI SWARA</p>
     </div>
   </footer>
 
-<script src="ratriswara.js"></script>
+  <script src="ratriswara.js" defer></script>
 </body>
 </html>
