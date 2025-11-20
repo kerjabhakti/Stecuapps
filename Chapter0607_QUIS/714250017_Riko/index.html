@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Musik</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand fs-4 fw-bold">Festival Musik</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarweb">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarweb">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li class="nav-item"><a href="#artis" class="nav-link">Artis</a></li>
+                <li class="nav-item"><a href="#pesan" class="nav-link">Pesan Tiket</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER / JUMBOTRON -->
+<header class="header-jumbotron" id="home">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Welcome</h1>
+        <p class="lead">Festival terbesar yang menghadirkan musisi, kreativitas, dan pengalaman nonstop dalam satu panggung megah.</p>
+        <a href="#artis">
+        <button class="btn btn-primary btn-lg mt-3">
+                Lihat
+        </button>
+        </a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<div class="container mt-5 about-section" id="tentang">
+    <div class="row align-items-center">
+        <div class="col-md-5">
+            <img src="Ye.jpg" class="img-fluid shadow">
+        </div>
+        <div class="col-md-7">
+            <br>
+    <h2 class="fw-bold">Festival Musik 2025</h2>
+    <p>Festival terbesar yang menghadirkan musisi, kreativitas, dan pengalaman nonstop dalam satu panggung megah.</p>
+    <p>
+        Acara ini dirancang untuk menjadi ruang pertemuan para pecinta musik, 
+        tempat setiap alunan nada dan energi panggung menyatu menjadi momen tak terlupakan.
+    </p>
+    <p>
+        Dengan kombinasi produksi megah, line-up artis terbaik, dan atmosfer yang penuh euforia,
+        Festival Musik 2025 siap memberikan pengalaman yang lebih dari sekadar hiburan.
+    </p>
+</div>
+    </div>
+</div>
+
+<!-- CARD SECTION -->
+<section class="container mt-5" id="artis">
+    <h1 class="text-center fw-bold mb-4">Bintang Special</h1>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+    <div class="card shadow h-100">
+        <img src="aepjpg.jpg" class="team-img card-img-top" alt="Dram">
+        <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Dram</h5>
+            <p class="card-text text-muted">
+                Memiliki ritme yang kuat dan presisi tinggi, selalu menjaga tempo musik tetap stabil dan penuh energi.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card shadow h-100">
+        <img src="nopaljpg.jpg" class="team-img card-img-top" alt="Fokalis">
+        <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Fokalis</h5>
+            <p class="card-text text-muted">
+                Suara utama yang menjadi identitas band, mampu membawakan berbagai karakter vokal dengan ekspresi yang kuat.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+    <div class="card shadow h-100">
+        <img src="rikojpg.jpg" class="team-img card-img-top" alt="Bass">
+        <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Bass</h5>
+            <p class="card-text text-muted">
+                Memberikan fondasi nada yang solid dan memperkuat groove, menjadi penghubung antara melodi dan ritme.
+            </p>
+        </div>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="text-center mt-5" id="pesan">
+    <h1 class="display-5 fw-bold">Daftar Harga</h1>
+    <p class="text-muted">Pesan Tiketmu Sekarang</p>
+</section>
+
+<div class="container mt-4">
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3">
+                <h4 class="fw-semibold">Basic</h4>
+                <h1 class="pricing-card-title mt-2">Rp 50.000</h1>
+                <ul class="list-unstyled mt-3">
+                    <li>Tiket Masuk</li>
+                    <li>Barisan Belakang</li>
+                    <li>-</li>
+                    <li>-</li>
+                </ul>
+                <button class="btn btn-outline-primary btn-lg w-100" 
+                        onclick="sendToWhatsApp('Basic', '50.000')">Pesan Sekarang
+                </button>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3 border-primary">
+                <h4 class="fw-semibold">Premium</h4>
+                <h1 class="pricing-card-title mt-2">Rp 100.000</h1>
+                <ul class="list-unstyled mt-3">
+                    <li>Tiket Masuk & Parkir</li>
+                    <li>Barisan Tengah</li>
+                    <li>Free Minuman</li>
+                    <li>-</li>
+                </ul>
+                <button class="btn btn-primary btn-lg w-100" 
+                    onclick="sendToWhatsApp('Standar', '100.000')">Pesan Sekarang
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow text-center p-3">
+                <h4 class="fw-semibold">VIP</h4>
+                <h1 class="pricing-card-title mt-2">Rp 200.000</h1>
+                <ul class="list-unstyled mt-3">
+                    <li>Tiket Masuk & Parti</li>
+                    <li>Barisan Depan</li>
+                    <li>Free Minuman</li>
+                    <li>Free Merchandise</li>
+                </ul>
+                <button class="btn btn-primary btn-lg w-100" 
+                    onclick="sendToWhatsApp('Premium', '200.000')">Pesan Sekarang
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Festival Musik - Dibuat oleh Riko</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
