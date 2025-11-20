@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tickets</a>
+        <a href="#">Info</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Festival Musik</h1>
+        <div class="circle">
+            <div class="circle-mini"></div>
+        </div>
+    </section>
+
+    <div class="container-1">
+        <h1>The most awaited music festival in the whole world!</h1>
+    </div>
+
+    <div class="container-2">
+        <center>
+        <h1>Check out our Line-up!</h1>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Jakarta')">Jakarta</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Seoul')">Seoul</button>
+            </div>
+
+            <div id="Jakarta" class="tabcontent">
+                <h3>Jakarta</h3>
+                <ul>
+                    <li>19.00 - 21.00 at GBK</li>
+                    <li>21.00 - 23.00 at JIEXPO</li>
+                    <li>23.00 - 01.00 at SCBD</li>
+                </ul>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <ul>
+                    <li>17.00 - 19.00 at GBK</li>
+                    <li>20.00 - 22.00 at JIEXPO</li>
+                    <li>22.00 - 00.00 at SCBD</li>
+                </ul>
+                </div>
+
+            <div id="Seoul" class="tabcontent">
+                <h3>Seoul</h3>
+                <ul>
+                    <li>07.00 - 09.00 at GBK</li>
+                    <li>13.00 - 15.00 at JIEXPO</li>
+                    <li>20.00 - 23.00 at SCBD</li>
+                </ul>
+            </div>
+        </center>
+    </div>
+
+    <div class="container-3">
+        <h1>We'll be waiting for your arrival!</h1>
+    </div>
+
+    <div class="container-4">
+        <center>
+        <h1>Check out our Line-up!</h1>
+            <div class="tab" style="width: 35%;">
+                <button class="tablinks" onclick="openCity(event, 'harga1')">Harga Jakarta</button>
+                <button class="tablinks" onclick="openCity(event, 'harga2')">Harga Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'harga3')">Harga Seoul</button>
+            </div>
+
+            <div id="harga1" class="tabcontent">
+                <h3>Jakarta</h3>
+                <p>Rp. 200.000</p>
+            </div>
+
+            <div id="harga2" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Rp. 250.000</p>
+                </div>
+
+            <div id="harga3" class="tabcontent">
+                <h3>Seoul</h3>
+                <p>Rp. 350.000</p>
+            </div>
+        </center>
+    </div>
+
+    <div class="container-5">
+        <div class="row-card">
+            <div class="card">
+                <img src="penyanyi1.jpeg">
+                <h3>Euis</h3>
+            </div>
+
+            <div class="card">
+                <img src="penyanyi2.jpeg">
+                <h3>Ujang</h3>
+            </div>
+
+            <div class="card">
+                <img src="penyanyi3.jpeg">
+                <h3>Ai</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; 2025 Festival Musik. All rights reserved.</footer>
+
+    <script src="animation.js"></script>
+</body>
+</html>
