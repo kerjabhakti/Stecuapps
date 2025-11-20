@@ -1,0 +1,146 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #c7c2e6;
+    color: white;
+}
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #ff00ff;
+}
+.cta {
+    padding: 12px 25px;
+    background: #502230;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cta:hover {
+    background: #e82daa;
+    transform: scale(1.05);
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    background: url('https://i.imgur.com/Y4z5srv.jpeg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(140, 56, 73, 0.5);
+    animation: moveBg 12s infinite linear;
+}
+@keyframes moveBg {
+    0% { backdrop-filter: blur(0px); }
+    50% { backdrop-filter: blur(4px); }
+    100% { backdrop-filter: blur(0px); }
+}
+.hero h1 {
+    font-size: 3rem;
+    z-index: 2;
+}
+.hero p {
+    z-index: 2;
+}
+
+/* ===== ACCORDION ===== */
+.lineup .accordion {
+    width: 90%;
+    margin: auto;
+}
+.accordion-btn {
+    width: 100%;
+    padding: 15px;
+    background: #222;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.accordion-btn:hover {
+    background: #444;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    background: #333;
+    padding: 0 15px;
+    border-radius: 0 0 10px 10px;
+    transition: max-height 0.3s ease;
+}
+
+/* ===== PERFORMER CARD ===== */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.card {
+    width: 180px;
+    background: #7a4545;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px #c969c9;
+    transition: 0.3s;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 15px #683768;
+}
+
+/* ===== TICKET ===== */
+.ticket-box {
+    background: #4c63ae;
+    padding: 20px;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #ff00ff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background: #6f5353;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer a {
+    color: #fdf8fb;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
