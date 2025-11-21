@@ -1,54 +1,53 @@
-// JavaScript for Ratri Swara Retro Concert Website
+// script.js — DOM interactions: accordion, scroll-reveal, ticket actions
 
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
-
-// Accordion for Lineup schedule
-const accordions = document.querySelectorAll('.accordion');
-
-accordions.forEach(acc => {
+document.addEventListener('DOMContentLoaded', () => {
+  // ACCORDION
+  const accs = document.querySelectorAll('.accordion');
+  accs.forEach(acc => {
     acc.addEventListener('click', () => {
-        acc.classList.toggle('active');
-        let panel = acc.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
+      const expanded = acc.getAttribute('aria-expanded') === 'true';
+      acc.setAttribute('aria-expanded', String(!expanded));
+      const panel = acc.nextElementSibling;
+      if (!expanded) {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      } else {
+        panel.style.maxHeight = null;
+      }
     });
-});
+  });
 
-// Popup Ticket Form
-const ticketButtons = document.querySelectorAll('.ticket-btn');
-const popup = document.querySelector('.ticket-popup');
-const closePopup = document.querySelector('.close-popup');
-
-if (ticketButtons) {
-    ticketButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            popup.classList.add('show');
-        });
+  // SCROLL REVEAL (IntersectionObserver)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
     });
-}
+  }, { threshold: 0.12 });
 
-if (closePopup) {
-    closePopup.addEventListener('click', () => {
-        popup.classList.remove('show');
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Smooth scrolling for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const href = a.getAttribute('href');
+      if(href.length>1){
+        e.preventDefault();
+        document.querySelector(href).scrollIntoView({behavior:'smooth'});
+      }
+    })
+  })
+
+  // BUY BUTTONS
+  document.querySelectorAll('.buy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tier = btn.dataset.tier || 'regular';
+      // Simple demo action — replace with checkout integration
+      const confirmMsg = `Kamu memilih ${tier.toUpperCase()} ticket. Lanjut untuk proses pembayaran?`;
+      if (confirm(confirmMsg)) {
+        // In a real site, redirect to payment/checkout
+        alert('silahkan cek email untuk payment — terimakasih!');
+      }
     });
-}
-
-// Fake form submit
-document.querySelector('#ticketForm')?.addEventListener('submit', function(e){
-    e.preventDefault();
-    alert("Tiket berhasil dipesan! Cek email kamu untuk konfirmasi.");
-    popup.classList.remove('show');
-    this.reset();
+  });
 });
