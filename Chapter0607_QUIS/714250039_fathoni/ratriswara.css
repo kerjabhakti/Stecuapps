@@ -173,7 +173,7 @@ h2 {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:18px;
-    justify-items:center
+    justify-items:center;
 }
 
 .ticket-box {
@@ -183,7 +183,8 @@ h2 {
     width:100%;
     max-width:320px;
     text-align:center;
-    border:1px solid rgba(255,255,255,0.03)
+    border:1px solid rgba(255,255,255,0.03);
+    background-color: #000000;
 }
 
 .ticket-box h3 {
