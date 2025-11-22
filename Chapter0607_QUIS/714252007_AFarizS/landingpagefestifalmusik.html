@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Rock Legends Fest 2025</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(45deg, #ff0099, #00eaff);
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 15px #fff;
+    }
+
+    /* Performer Section */
+    .performers {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .performer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: #111;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff00ff66;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 25px #ff00ff;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+    }
+
+    /* Ticket Section */
+    .tickets {
+      padding: 50px 20px;
+      background: linear-gradient(45deg, #ff6600, #ff0099);
+      text-align: center;
+    }
+
+    .ticket-box {
+      background: #111;
+      padding: 25px;
+      border-radius: 20px;
+      display: inline-block;
+      box-shadow: 0 0 20px #ffffff55;
+    }
+
+    .ticket-box h2 {
+      font-size: 2rem;
+    }
+
+    .buy-btn {
+      background: #00ffcc;
+      padding: 12px 25px;
+      margin-top: 15px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background: #00ffaa;
+      box-shadow: 0 0 15px #00ffdd;
+    }
+
+    /* Scroll Reveal */
+    .hidden {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #0d0d0d;
+  border-top: 2px solid #ff00ff;
+  margin-top: 50px;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #ff00ff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.icon:hover {
+  color: #00eaff;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔥 NEON ROCK LEGENDS FEST 2025 🔥</h1>
+  <p>Feel the energy. Experience the vibes. Join the festival!</p>
+</header>
+
+<section class="performers hidden">
+  <h2>🎤 Performer Line-Up</h2>
+  <div class="performer-grid">
+    <div class="card">
+      <img src="https://osccdn.medcom.id/images/content/2021/10/17/eb2abef6adc5e5a87fc6cba2590c226b.jpg" />
+      <h3>God Bless</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://www.impericon.com/cdn/shop/articles/20240212_acdcband_2.webp?v=1738595504&width=1000" />
+      <h3>AC/DC</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://img.antaranews.com/cache/1200x800/2025/10/23/bon-jovi.jpg.webp" />
+      <h3>Bon Jovi</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://imgsrv2.voi.id/x8IJSF8WiaK0y97LW5SiZuHnmGTdAgotUR2HFjmFZf8/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy80MTU1NDEvMjAyNDA5MTEwOTUyLW1haW4uY3JvcHBlZF8xNzI2MDIzMTQ3LmpwZw.jpg" />
+      <h3>Gun N' Rosses</h3>
+    </div>
+  </div>
+</section>
+
+<section class="tickets hidden">
+  <h2>🎫 Tickets</h2>
+  <div class="ticket-box">
+    <h2>Rp 350.000</h2>
+    <p>Full Access • Free Merchandise • VIP Lane</p>
+    <button class="buy-btn" onclick="alert('Tickets purchased!')">BUY TICKETS</button>
+  </div>
+</section>
+
+<script>
+  const hiddenElements = document.querySelectorAll('.hidden');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  hiddenElements.forEach(el => observer.observe(el));
+</script>
+<footer class="footer">
+  <h3>Follow Us</h3>
+
+  <div class="social-icons">
+    <a href="#" class="icon">🌐</a>
+    <a href="#" class="icon">📘</a>
+    <a href="#" class="icon">📸</a>
+    <a href="#" class="icon">🐦</a>
+  </div>
+
+  <p>&copy; 2025 Neon Rock Legends Fest</p>
+ 2025 Neon Rock Legends Fest. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
