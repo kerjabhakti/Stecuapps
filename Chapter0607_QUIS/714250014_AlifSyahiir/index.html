@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduMaster - Bimbingan Belajar Online</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <button id="darkModeToggle" class="toggle-btn">Mode</button>
+        <div class="logo">EduLiff</div>
+        <nav>
+            <a href="#courses">Kursus</a>
+            <a href="#features">Fitur</a>
+            <a href="#reviews">Review</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="hero fade-in">
+        <div class="hero-text">
+            <h1>Belajar Pemograman dari nol</h1>
+            <p>Akses kelas premium, sertifikat, dan mentoring hanya dalam satu platform.</p>
+            <button class="cta-btn">Mulai Belajar</button>
+        </div>
+        <div class="hero-image">
+            <img src="otak.jpg" alt="Mockup App" />
+        </div>
+    </section>
+
+    <section id="features" class="features fade-in">
+        <h2>Kenapa Pilih EduMaster?</h2>
+        <div class="features-grid">
+            <div class="feature-card">Mentoring Langsung</div>
+            <div class="feature-card">Sertifikat Resmi</div>
+            <div class="feature-card">Akses Seumur Hidup</div>
+            <div class="feature-card">Komunitas Belajar</div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses fade-in">
+        <h2>Kursus Unggulan</h2>
+        <div class="course-container" id="course-list"></div>
+           <!-- Search + Filter -->
+    <div class="filter-area">
+        <input type="text" id="searchInput" placeholder="Cari kursus..." />
+        <select id="categoryFilter">
+            <option value="all">Semua Kategori</option>
+            <option value="Web Development">Web Development</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+    </div>
+    </section>
+
+    <section id="reviews" class="rating-section fade-in">
+        <h2>Beri Rating</h2>
+        <div class="stars" id="starRating"></div>
+        <p class="rating-text" id="ratingText">Pilih bintang untuk memberikan penilaian</p>
+    </section>
+
+    <section id="faq" class="faq fade-in">
+        <h2>FAQ</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-btn">Apa itu EduLiff?</button>
+                <div class="accordion-content">Platform kursus online interaktif dengan Pembimbing profesional.</div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn">Apakah dapat sertifikat?</button>
+                <div class="accordion-content">Ya, karena setiap kelas memiliki sertifikat digital.</div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn">Apakah akses kelas selamanya?</button>
+                <div class="accordion-content">Tidak, Karena setiap pembelian sekali dalam sebulan.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>@ 2025 EduLiff</p>
+    </footer>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
