@@ -1,0 +1,174 @@
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #00ff00);
+    background-size: 400% 400%;
+    animation: shift 4s ease infinite;
+}
+
+@keyframes shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+h1, h2, h3 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+/* Hero */
+#hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background: #ff00ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff00ff;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: #00ff00;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background: #00ffff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tab-content li {
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Cards */
+.performer-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: transform 0.2s;
+    width: 200px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Tickets */
+.ticket-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ticket-card {
+    background: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    width: 150px;
+}
+
+.buy-button {
+    background: #ff00ff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.buy-button:hover {
+    background: #00ffff;
+}
+
+/* Footer */
+footer {
+    background: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-link {
+    color: #00ffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .performer-cards, .ticket-options, .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    #hero {
+        height: 50vh;
+    }
+}
