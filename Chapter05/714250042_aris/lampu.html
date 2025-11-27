@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lampu ON/OFF</title>
+    <style>
+      .tombolon {
+        background-color: rgb(42, 179, 24);
+      }
+      .tomboloff {
+        background-color: rgb(179, 60, 24);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Ini adalah Saklar Lampu</h2>
+    <button
+      class="tombolon"
+      onclick="document.getElementById('gambar_lampu').src='img/lamp_on.jpg'"
+    >
+      Nyalakan Lampu
+    </button>
+    <img
+      id="gambar_lampu"
+      src="img/lamp_off.png"
+      alt="Lampu_mati"
+      style="width: 100px"
+    />
+    <button
+      class="tomboloff"
+      onclick="document.getElementById('gambar_lampu').src='img/lamp_off.png'"
+    >
+      Matikan Lampu
+    </button>
+  </body>
+</html>
