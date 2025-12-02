@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <H1><center>PERKENALAN DULU</center></H1>    
+    
+    <button onclick="tampil()">Hello nama saya</button>
+    <p id="teks" style="display: none;">Muhamad Ridho Ichsani</p>
+
+    <button onclick="kota()">Asal saya dari</button>
+    <p id="teks2" style="display: none;">Sumatera Selatan, Palembang</p>
+
+    <button onclick="hobi()">Hobi saya</button>
+    <p id="teks3" style="display: none;">Membaca Buku dan Bermain Game</p>
+    <script>
+        function tampil() {
+            var a = document.getElementById("teks");
+            a.style.display = "block";
+        }
+
+        function kota() {
+            var a = document.getElementById("teks2");
+            a.style.display = "block";
+        }
+
+        function hobi() {
+            var a = document.getElementById("teks3");
+            a.style.display = "block";
+        }
+    </script>
+</body>
+</html>

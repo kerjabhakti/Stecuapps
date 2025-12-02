@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Academy - Belajar Pemrograman Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="logo">Code Academy</div>
+      <ul class="nav-list">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#courses">Kursus</a></li>
+        <li><a href="#features">Fitur</a></li>
+        <li><a href="#reviews">Review</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="btn cta">Mulai Belajar</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero-left fade-in">
+        <h1>Belajar Pemrograman dengan Code Academy</h1>
+        <p>Tingkatkan keterampilan coding Anda dengan kursus online berkualitas — dari pemula sampai mahir.</p>
+        <div class="hero-actions">
+          <button class="btn cta">Mulai Belajar</button>
+          <a class="btn ghost" href="#courses">Lihat Kursus</a>
+        </div>
+      </div>
+
+      <div class="hero-right fade-in">
+        <img src="img/hero-illustration.svg" alt="Ilustrasi aplikasi Code Academy" class="hero-ill" />
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="section container">
+      <h2>Kursus Unggulan Kami</h2>
+      <div class="grid course-grid">
+        <article class="course-card">
+          <img src="img/HTML and CSS.png" alt="HTML & CSS" class="course-image" />
+          <h3>HTML & CSS Dasar</h3>
+          <p>Pelajari struktur web dan styling dasar untuk membangun halaman responsif.</p>
+          <div class="meta">
+            <span class="price">Rp 500.000</span>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img src="img/Javascript.jpg" alt="JavaScript" class="course-image" />
+          <h3>JavaScript Fundamental</h3>
+          <p>Menguasai logika, DOM, dan interaktivitas dasar pada web.</p>
+          <div class="meta">
+            <span class="price">Rp 750.000</span>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img src="img/React JS.png" alt="React.js" class="course-image" />
+          <h3>React.js untuk Pemula</h3>
+          <p>Membangun aplikasi single-page modern dengan komponen.</p>
+          <div class="meta">
+            <span class="price">Rp 1.000.000</span>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <img src="img/Python.jpg" alt="Python" class="course-image" />
+          <h3>Python Programming</h3>
+          <p>Dasar Python untuk automation, data, dan pengembangan aplikasi.</p>
+          <div class="meta">
+            <span class="price">Rp 900.000</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section container">
+      <h2>Fitur Platform Kami</h2>
+      <div class="grid feature-grid">
+        <div class="feature">
+          <img src="img/Mentor.jpeg" alt="Mentoring" class="feature-image" />
+          <h3>Mentoring 1-on-1</h3>
+          <p>Bimbingan pribadi dengan mentor berpengalaman.</p>
+        </div>
+        <div class="feature">
+          <img src="img/Sertifikat.jpg" alt="Sertifikat" class="feature-image" />
+          <h3>Sertifikat Resmi</h3>
+          <p>Sertifikat yang bisa ditambahkan ke portofolio profesional.</p>
+        </div>
+        <div class="feature">
+          <img src="img/Infinity.jpg" alt="Akses Seumur Hidup" class="feature-image" />
+          <h3>Akses Seumur Hidup</h3>
+          <p>Materi selalu tersedia termasuk update.</p>
+        </div>
+        <div class="feature">
+          <img src="img/Proyek.jpg" alt="Proyek" class="feature-image" />
+          <h3>Proyek Praktis</h3>
+          <p>Proyek nyata untuk mengisi portofolio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section container">
+      <h2>Apa Kata Siswa Kami</h2>
+      <div class="grid review-grid">
+        <div class="review-card">
+          <img src="img/Profile 1.jpg" alt="Rafli" class="avatar" />
+          <div class="rating" data-rating="5" aria-hidden="false"></div>
+          <p class="quote">"Kursus di Code Academy sangat membantu saya memahami pemrograman dari nol."</p>
+          <div class="reviewer">- Rafli Ahmad Zaki</div>
+        </div>
+
+        <div class="review-card">
+          <img src="img/Profile 2.jpg" alt="Susi" class="avatar" />
+          <div class="rating" data-rating="4"></div>
+          <p class="quote">"Fitur akses seumur hidup sangat berguna untuk review materi kapan saja."</p>
+          <div class="reviewer">- Susi Susanti</div>
+        </div>
+
+        <div class="review-card">
+          <img src="img/Profile 3.jpg" alt="Budi" class="avatar" />
+          <div class="rating" data-rating="5"></div>
+          <p class="quote">"Mentoring 1-on-1 membuat saya bisa fokus pada area yang perlu diperbaiki."</p>
+          <div class="reviewer">- Fauzan Azima</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section container">
+      <h2>Pertanyaan Umum</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">Apakah kursus ini cocok untuk pemula?</button>
+          <div class="accordion-content">
+            <p>Ya — dirancang untuk semua level, mulai dari pemula hingga mahir.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Berapa lama akses ke materi?</button>
+          <div class="accordion-content">
+            <p>Akses seumur hidup termasuk update materi.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Ada sertifikat setelah selesai?</button>
+          <div class="accordion-content">
+            <p>Ya, sertifikat resmi diberikan setelah menyelesaikan kursus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2023 Code Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
