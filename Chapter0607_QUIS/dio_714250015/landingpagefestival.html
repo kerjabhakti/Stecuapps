@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ULBI Neon Fest 2025</title>
+
+<style>
+    body { margin: 0; font-family: Arial; background: #060606; color: white; }
+
+    /* HERO */
+    .hero {
+        height: 50vh;
+        background: linear-gradient(45deg,#ff00ff,#00eaff,#7b00ff);
+        background-size: 400% 400%;
+        animation: neonMove 6s infinite alternate;
+        display: flex; justify-content: center; align-items: center;
+        text-align: center; padding: 20px;
+        box-shadow: 0 0 25px #00eaff inset;
+    }
+    @keyframes neonMove {
+        0%{background-position:0 0;}
+        100%{background-position:100% 100%;}
+    }
+
+    section { padding: 30px 20px; max-width: 850px; margin: auto; }
+
+    h2 { color: #00eaff; text-shadow: 0 0 10px #00eaff; }
+
+    /* ACCORDION */
+    .accordion-btn {
+        width: 100%; padding: 12px;
+        background: #ff00ff; border: none; color: white;
+        border-radius: 8px; cursor: pointer; margin-bottom: 5px;
+        box-shadow: 0 0 10px #ff00ff;
+    }
+    .accordion-content {
+        display: none; padding: 10px; background: #111; border-radius: 8px;
+        box-shadow: 0 0 8px #7b00ff inset;
+    }
+
+    /* PERFORMER CARDS */
+    .cards { display: flex; gap: 10px; overflow-x: auto; }
+    .card {
+        min-width: 150px; background: #111;
+        padding: 10px; text-align: center; border-radius: 10px;
+        box-shadow: 0 0 10px #00eaff;
+    }
+    .card img {
+        width: 100%; height: 150px; object-fit: cover;
+        border-radius: 10px; box-shadow: 0 0 10px #ff00ff;
+    }
+
+    /* TICKET */
+    .ticket {
+        background: #111; padding: 20px; text-align: center; border-radius: 10px;
+        box-shadow: 0 0 12px #7b00ff;
+    }
+    .ticket button {
+        padding: 10px 20px; background: #00eaff; color: black;
+        border: none; border-radius: 8px; cursor: pointer;
+        box-shadow: 0 0 10px #00eaff;
+    }
+
+    /* FORM */
+    input {
+        padding: 10px; border-radius: 8px; border: none;
+        margin-bottom: 10px; width: 100%;
+        background: #111; color: white;
+        box-shadow: 0 0 8px #7b00ff inset;
+    }
+    .submit-btn {
+        padding: 12px; background: #ff00ff; color: white;
+        border-radius: 8px; border: none; cursor: pointer;
+        box-shadow: 0 0 12px #ff00ff;
+    }
+
+    footer {
+        text-align: center; padding: 20px; background: #0a0a0a;
+        box-shadow: 0 0 10px #00eaff inset;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <div>
+        <h1 style="text-shadow:0 0 15px #ff00ff;">ULBI NEON FEST 2025</h1>
+        <p>Guest Star: <b>Dio Ahmad Alfarisyi</b></p>
+    </div>
+</div>
+
+<section>
+    <h2>Jadwal Acara</h2>
+
+    <button class="accordion-btn">Hari 1</button>
+    <div class="accordion-content">Opening • Band • Dance</div>
+
+    <button class="accordion-btn">Hari 2</button>
+    <div class="accordion-content">Talkshow • Food Fest</div>
+
+    <button class="accordion-btn">Hari 3</button>
+    <div class="accordion-content">Penampilan Dio Ahmad Alfarisyi</div>
+</section>
+
+<section>
+    <h2>Performer</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="fotodio.jpg">
+            <p>Dio Ahmad Alfarisyi (GuestStar)</p>
+        </div>
+        <div class="card">
+            <img src="dewa.jpg.jpg"">
+            <p>Band Kampus ULBI</p>
+        </div>
+        <div class="card">
+            <img src="jkt.jpg.jpg"">
+            <p>Dance Club ULBI</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Tiket</h2>
+    <div class="ticket">
+        <h3>HTM: Rp 25.000</h3>
+        <button>Beli Tiket</button>
+    </div>
+</section>
+
+<section>
+    <h2>Daftar Kehadiran</h2>
+    <form onsubmit="event.preventDefault(); alert('Data terkirim!');">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Prodi" required>
+        <button class="submit-btn">Kirim</button>
+    </form>
+</section>
+
+<footer>
+    Instagram • TikTok • YouTube
+</footer>
+
+<script>
+    const acc = document.querySelectorAll(".accordion-btn");
+    acc.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const box = btn.nextElementSibling;
+            box.style.display = box.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>
+
