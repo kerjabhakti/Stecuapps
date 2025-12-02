@@ -1,63 +1,90 @@
-// Dynamic Star Rating
-function createStars(rating) {
-    const starContainer = document.createElement('div');
-    starContainer.className = 'stars';
-    for (let i = 1; i <= 5; i++) {
-        const star = document.createElement('span');
-        star.className = 'star';
-        star.innerHTML = i <= rating ? '★' : '☆';
-        starContainer.appendChild(star);
-    }
-    return starContainer;
-}
+// script.js - final integration
 
-function initializeRatings() {
-    const ratingElements = document.querySelectorAll('.rating');
-    ratingElements.forEach(element => {
-        const rating = parseInt(element.getAttribute('data-rating'));
-        element.appendChild(createStars(rating));
-    });
-}
-
-// Accordion FAQ
-function initializeAccordion() {
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
-    accordionHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const isOpen = content.style.maxHeight;
-
-            // Close all other accordions
-            document.querySelectorAll('.accordion-content').forEach(item => {
-                item.style.maxHeight = null;
-            });
-
-            // Open clicked accordion
-            if (!isOpen) {
-                content.style.maxHeight = content.scrollHeight + 'px';
-            }
-        });
-    });
-}
-
-// Smooth scrolling for navigation links
-function initializeSmoothScroll() {
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
-}
-
-// Initialize all functions when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    initializeRatings();
-    initializeAccordion();
-    initializeSmoothScroll();
+document.addEventListener('DOMContentLoaded', () => {
+  renderRatings();
+  setupAccordion();
+  setupSmoothScroll();
+  setupCTA();
+  initFadeIn();
 });
+
+/* ===== RENDER RATING (minimal markup) ===== */
+function renderRatings(){
+  document.querySelectorAll('.rating').forEach(el => {
+    const score = Number(el.dataset.rating) || 0;
+    el.innerHTML = ''; // reset
+    for (let i = 1; i <= 5; i++) {
+      const span = document.createElement('span');
+      span.className = 'star';
+      span.textContent = i <= score ? '★' : '☆';
+      el.appendChild(span);
+    }
+    el.setAttribute('aria-label', `Rating ${score} dari 5`);
+  });
+}
+
+/* ===== ACCORDION ===== */
+function setupAccordion(){
+  document.querySelectorAll('.accordion-item').forEach(item => {
+    const btn = item.querySelector('.accordion-header');
+    const content = item.querySelector('.accordion-content');
+
+    btn.addEventListener('click', () => {
+      const open = item.classList.contains('open');
+
+      // close all
+      document.querySelectorAll('.accordion-item.open').forEach(it => {
+        it.classList.remove('open');
+        it.querySelector('.accordion-content').style.maxHeight = null;
+      });
+
+      if (!open) {
+        item.classList.add('open');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        item.classList.remove('open');
+        content.style.maxHeight = null;
+      }
+    });
+  });
+}
+
+/* ===== SMOOTH SCROLL FOR ANCHORS ===== */
+function setupSmoothScroll(){
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const href = a.getAttribute('href');
+      if (!href || href === '#') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+}
+
+/* ===== CTA BUTTON ===== */
+function setupCTA(){
+  document.querySelectorAll('.cta').forEach(btn => {
+    btn.addEventListener('click', () => {
+      // example CTA: WA link (sesuaikan kalau perlu)
+      window.location.href = 'https://wa.me/6282177737844';
+    });
+  });
+}
+
+/* ===== FADE-IN ON SCROLL ===== */
+function initFadeIn(){
+  const els = document.querySelectorAll('.fade-in');
+  if (!els.length) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.18});
+  els.forEach(el => observer.observe(el));
+}
