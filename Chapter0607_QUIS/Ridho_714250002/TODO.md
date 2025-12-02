@@ -1,4 +1,0 @@
-- [x] Update .hero padding from 48px 0 to 24px 0
-- [x] Update .hero gap from 36px to 24px
-- [x] Add responsive styles for .hero-ill (max-width: 100%; height: auto;)
-- [x] In @media (max-width: 800px), change .hero padding to 16px 0
