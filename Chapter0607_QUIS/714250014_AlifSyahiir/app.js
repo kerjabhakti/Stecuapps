@@ -2,7 +2,7 @@
 const courses = [
     { title: "Full Stack Web Development (MERN)", teacher: "Budi", price: "Rp 120.000", category: "Web Development" },
     { title: "Desain UI/UX dengan Figma", teacher: "Amanda", price: "Rp 150.000", category: "UI/UX Design" },
-    { title: "Strategi Digital Marketing 2024", teacher: "Fajar", price: "Rp 100.000", category: "Digital Marketing" },
+    { title: "Strategi Digital Marketing 2025", teacher: "Fajar", price: "Rp 100.000", category: "Digital Marketing" },
     { title: "Pengantar Data Science & Python", teacher: "Rina", price: "Rp 200.000", category: "Data Science" },
     { title: "Fundamental HTML & CSS", teacher: "Siska", price: "Rp 80.000", category: "Web Development" },
     { title: "Advanced JavaScript", teacher: "Dino", price: "Rp 180.000", category: "Web Development" },
