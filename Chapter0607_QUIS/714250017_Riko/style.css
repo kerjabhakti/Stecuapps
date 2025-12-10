@@ -1,0 +1,53 @@
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header-jumbotron {
+    min-height: 700px;
+    background-image: url('bg.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.header-jumbotron::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+.header-jumbotron .container {
+    position: relative;
+    z-index: 2;
+}
+.header-jumbotron .btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+/* CARD */
+.card {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ABOUT */
+.about-section img {
+    border-radius: 15px;
+}
+
+/* CONTACT */
+.contact-card input,
+.contact-card textarea {
+    border-radius: 10px;
+}
