@@ -1,11 +1,11 @@
 // Data Kursus Unggulan (Data tetap sama)
         const featuredCourses = [
-            { id: 1, title: 'Mastering JavaScript Modern', mentor: 'Rizky Pratama', duration: '12 Jam', rating: 4.8, image: 'https://placehold.co/100x60/fde047/65a30d?text=JS' },
-            { id: 2, title: 'Desain UI/UX dengan Figma', mentor: 'Citra Dewi', duration: '8 Jam', rating: 4.9, image: 'https://placehold.co/100x60/a78bfa/ffffff?text=Figma' },
-            { id: 3, title: 'Data Science untuk Pemula', mentor: 'Aditya Wibowo', duration: '15 Jam', rating: 4.6, image: 'https://placehold.co/100x60/fda4af/ffffff?text=Data' },
-            { id: 4, title: 'Strategi Pemasaran Digital', mentor: 'Lia Susanti', duration: '10 Jam', rating: 4.7, image: 'https://placehold.co/100x60/99f6e4/083344?text=Marketing' },
-            { id: 5, title: 'Fundamental Backend Golang', mentor: 'Bayu Sentosa', duration: '14 Jam', rating: 4.5, image: 'https://placehold.co/100x60/818cf8/ffffff?text=Go' },
-            { id: 6, title: 'Fotografi Profesional', mentor: 'Dian Nugraha', duration: '6 Jam', rating: 5.0, image: 'https://placehold.co/100x60/fecaca/991b1b?text=Photo' },
+            { id: 1, title: 'Mastering JavaScript Modern', mentor: 'Rizky Pratama', duration: '12 Jam', rating: 4.8, image: 'img/javascript.jpg' },
+            { id: 2, title: 'Desain UI/UX dengan Figma', mentor: 'Citra Dewi', duration: '8 Jam', rating: 4.9, image: 'img/figma.jpg' },
+            { id: 3, title: 'Data Science untuk Pemula', mentor: 'Aditya Wibowo', duration: '15 Jam', rating: 4.6, image: 'img/data.jpg' },
+            { id: 4, title: 'Python Fundamental', mentor: 'Lia Susanti', duration: '10 Jam', rating: 4.7, image: 'img/python.jpg' },
+            { id: 5, title: 'Fundamental Backend Golang', mentor: 'Bayu Sentosa', duration: '14 Jam', rating: 4.5, image: 'img/golang.jpg' },
+            { id: 6, title: 'Game Development With Unity', mentor: 'Dani Hansip', duration: '6 Jam', rating: 5.0, image: 'img/unity.jpg' },
         ];
 
         // Data FAQ (Data tetap sama)
