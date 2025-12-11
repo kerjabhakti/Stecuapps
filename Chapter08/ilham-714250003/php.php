@@ -6,6 +6,6 @@
     <title>HTML pemula</title>
 </head>
 <body>
-    <h1>Helo <?php echo "Al Ghani Muhammad Fadhillah";?></h1>
+    <h1>Helo <?php echo "muhammad ilham habiballah";?></h1>
 </body>
 </html>
