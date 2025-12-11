@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Menentukan Lokasi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>JavaScript Menentukan Lokasi</h2>
+  <p>Klik tombol di bawah ini:</p>
+
+  <button onclick="tampil('teks1')">HELOO GUYSSS WELCOME</button>
+  <p id="teks1">THIS IS ZIKMAL</p>
+
+  <button onclick="tampil('teks2')">MY HOBBY</button>
+  <p id="teks2">BADMINTON</p>
+
+  <script>
+    function tampil(id) {
+      var teks = document.getElementById(id);
+      teks.style.display = "block";
+    }
+  </script>
+</body>
+</html>
