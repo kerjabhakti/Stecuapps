@@ -199,6 +199,4 @@ footer {
 <footer>
     Instagram • TikTok • YouTube
 </footer>
-
-<script>
-const acc = document.query
+ 
