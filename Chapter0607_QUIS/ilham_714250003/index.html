@@ -3,147 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>konser manusia hebat 2025 | which will then grow</title>
+    <title>Konser Sederhana</title>
     <link rel="stylesheet" href="warna.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header class="hero-section">
-        <img id="background-video" src="performing-jordan-davis.gif" alt="Background GIF">
-        <div class="background-animation"></div> <div class="hero-content">
-            <h1 class="neon-text">konser manusia hebat </h1>
-            <h2>Which will then grow</h2>
-            <p>5 - 10 Desember | niversitas logistik dan bisnis internaisonal</p>
-            <a href="#tickets" class="cta-button">Grab Your Ticket to Space!</a>
-        </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <button onclick="scrollToArtis()">Artis Musik</button>
+        <button onclick="pesanWA('Tiket', '850.000')">Pesan Tiket (WA)</button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero fade-in">
+        <h1>Konser Manusia Hebat 2025</h1>
+        <p>5 - 10 Desember | Universitas Logistik dan Bisnis Internasional</p>
     </header>
 
-    <main>
-        <section id="lineup" class="section">
-            <h3>🌌 Great human concert & strong</h3>
-            <div class="schedule-tabs">
-                <button class="tab-button active" data-day="day1">Day 1: strong man</button>
-                <button class="tab-button" data-day="day2">Day 2: great and crazy man</button>
-            </div>
-            
-            <div id="day1" class="schedule-content active">
-                <div class="accordion-item">
-                    <button class="accordion-title">Stage Alpha (17:00 - 20:00)</button>
-                    <div class="accordion-panel">
-                        <p>12:00 - 20:00: **DJ NEBULA**</p>
-                        <p>16:00 - 22:00: **The Orbital Band**</p>
-                        <p>06:00 - 12:00: **HEADLINER: COSMIC RAYS**</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-title">Stage Beta (20:00 - 23:00)</button>
-                    <div class="accordion-panel">
-                        <p>20:00 - 21:30: **Vortex Vixens**</p>
-                        <p>21:30 - 23:00: **SynthWave Sailor**</p>
-                    </div>
-                </div>
+    <!-- ARTIS -->
+    <section id="artis" class="section fade-in">
+        <h2>Daftar Artis Musik</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>COSMIC RAYS</h3>
+                <img src="cozy-home-interior-anime-style (1).jpg" alt="">
             </div>
 
-            <div id="day2" class="schedule-content">
-                <div class="accordion-item">
-                    <button class="accordion-title">Stage Alpha (17:00 - 20:00)</button>
-                    <div class="accordion-panel">
-                        <p>17:00 - 18:30: **Astro Pop Duo**</p>
-                        <p>18:30 - 20:00: **Lunar Lullaby**</p>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>DJ NEBULA</h3>
+                <img src="Cuplikan layar 2025-11-12 184407.png" alt="">
             </div>
-        </section>
 
-        <hr>
-
-        <section id="performers" class="section">
-            <h3>🎤 Meet the Interstellar Artists</h3>
-            <div class="performer-grid">
-                <div class="performer-card scroll-reveal">
-                    <div class="card-image performer-cosmic-rays"></div>
-                    <h4>COSMIC RAYS</h4>
-                    <p>Electronic / Dubstep</p>
-                </div>
-                <div class="performer-card scroll-reveal">
-                    <div class="card-image performer-nebula"></div>
-                    <h4>DJ NEBULA</h4>
-                    <p>Future House / Trance</p>
-                </div>
-                <div class="performer-card scroll-reveal">
-                    <div class="card-image performer-vortex"></div>
-                    <h4>Vortex Vixens</h4>
-                    <p>Indie Pop / Synth</p>
-                </div>
-                <div class="performer-card scroll-reveal">
-                    <div class="card-image performer-sailor"></div>
-                    <h4>SynthWave Sailor</h4>
-                    <p>80s Retro / Wave</p>
-                </div>
+            <div class="card">
+                <h3>Vortex Vixens</h3>
+                <img src="Gambar WhatsApp 2025-11-01 pukul 21.54.24_1c0f310f.jpg" alt="">
             </div>
-        </section>
 
-        <hr>
-
-        <section id="tickets" class="section">
-            <h3>🎟️ Get Your Entry Pass</h3>
-            <div class="ticket-options">
-                <div class="ticket-card">
-                    <h4>PULSAR PASS (1 Day)</h4>
-                    <p class="price">IDR 850.000</p>
-                    <ul>
-                        <li>Akses 1 Hari (Pilih)</li>
-                        <li>Semua Stage</li>
-                        <li>Early Bird Merch Disc.</li>
-                    </ul>
-                    <button class="btn btn-outline-primary btn-lg w-100" 
-                        onclick="sendToWhatsApp('Basic', '850.000')">Pesan Sekarang
-                </button>
-                </div>
-                <div class="ticket-card featured">
-                    <h4>GALAXY PASS (2 Days)</h4>
-                    <p class="price">IDR 1.500.000</p>
-                    <ul>
-                        <li>Akses Penuh 2 Hari</li>
-                        <li>Area VIP Viewing</li>
-                        <li>Eksklusif: After Party</li>
-                    </ul>
-                    <button class="btn btn-outline-primary btn-lg w-100" 
-                        onclick="sendToWhatsApp('Basic', '1.500.000')">Pesan Sekarang
-                </button>
-                </div>
-                <div class="ticket-card">
-                    <h4>ORBIT PASS (VVIP)</h4>
-                    <p class="price">IDR 3.000.000</p>
-                    <ul>
-                        <li>Semua Keuntungan Galaxy</li>
-                        <li>Backstage Access</li>
-                        <li>Free Flow Minuman</li>
-                    </ul>
-                    <button class="btn btn-outline-primary btn-lg w-100" 
-                        onclick="sendToWhatsApp('Basic', '3.000.000')">Pesan Sekarang
-                </button>
-                </div>
+            <div class="card">
+                <h3>SynthWave Sailor</h3>
+                <img src="earth-planet-stars-blue-marble-wallpaper-preview.jpg" alt="">
             </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>&copy; Penerbit website,muhammad ilham habiballah.</p>
-        <div class="social-links">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
         </div>
+    </section>
+
+    <!-- TIKET -->
+    <section class="section fade-in">
+        <h2>Harga Tiket</h2>
+
+        <div class="ticket">
+            <h3>Paket 1 Hari</h3>
+            <p>Rp 850.000</p>
+            <button class="pulse" onclick="pesanWA('1 Hari', '850.000')">Pesan via WhatsApp</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Konser Manusia Hebat</p>
     </footer>
 
     <script src="fron.js"></script>
-    <script>
-        
-    </script>
 </body>
 </html>
