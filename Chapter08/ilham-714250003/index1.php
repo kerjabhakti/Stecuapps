@@ -9,6 +9,6 @@
     <h1>Latihan PHP</h1>
     <h2>Hello World!</h2>
     <?php 
-    echo "Saya Al Ghani Muhammad Fadhillah" ?>
+    echo "Saya muhammad ilham habiballah" ?>
 </body>
 </html>

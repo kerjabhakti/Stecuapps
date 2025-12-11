@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/*HERO*/
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #ff00c8, #ff7a00, #00eaff);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    padding: 0 20px;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0% 50%;}
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00c8;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from{ text-shadow: 0 0 5px #fff;}
+    to { text-shadow: 0 0 20px #00eaff;}
+}
+
+/*SECTION TITLES*/
+h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 2.4rem;
+    text-shadow: 0 0 10px #ff00c8;
+}
+
+/*Jadwal (ACCORDION)*/
+.accordion {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.accordion-item {
+    background: #111;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ff00c8;
+    transition: 0.3s;
+}
+
+.accordion-header{
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #1a1a1a;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background: #0f0f0f;
+}
+
+/*PERFORMERS*/
+.performers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    background: #111;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #ff00c8;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00eaff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*TICKETS*/
+.tickets {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.ticket-box {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 0 10px #ff00c8;
+    transition: 0.3s;
+}
+
+.ticket-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00eaff;
+}
+
+.ticket-box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff00c8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ticket-box button:hover {
+    background: #00eaff;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #ff00c8;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #00eaff;
+}
+
+/*SCROLL REVEAL*/
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
