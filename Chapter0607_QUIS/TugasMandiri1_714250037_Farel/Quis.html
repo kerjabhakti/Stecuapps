@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Festival Musik 2025</title>
   <style>
-    body { margin:0; font-family: Arial; background:#2c0085; color:white; }
+    body { margin:0; font-family: Arial; background:#111111; color:white; }
     header { height:60vh; display:flex; align-items:center; justify-content:center; text-align:center; position:relative; overflow:hidden; }
     header::before {
       content:"";
-      position:absolute; inset:0;
-      background: linear-gradient(45deg, #ff3c5f, #4d4dff, #00fff7);
+      position:absolute; inset: 0px;
+      background: linear-gradient(45deg, #ff002f, #4d4dff, #00fff7);
       background-size:300% 300%; animation:bgmove 10s infinite linear; z-index:-1;
     }
     @keyframes bgmove { 0%{background-position:0 50%} 50%{background-position:100% 50%} 100%{background-position:0 50%} }
@@ -18,13 +18,13 @@
     .section { padding:40px 20px; max-width:900px; margin:auto; }
 
     /* Accordion */
-    .accordion-item { background:#ff3c5f; margin-bottom:10px; border-radius:5px; }
+    .accordion-item { background:#ff002f; margin-bottom:10px; border-radius:5px; }
     .accordion-header { padding:15px; cursor:pointer; }
     .accordion-body { max-height:0; overflow:hidden; transition:max-height .3s ease; padding:0 15px; }
 
     /* Performers */
     .performers { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
-    .card { background:#ff3c5f; border-radius:5px; overflow:hidden; }
+    .card { background:#ff002f; border-radius:5px; overflow:hidden; }
     .card img { width:100%; height:150px; object-fit:cover; }
     .card div { padding:10px; }
 
@@ -32,7 +32,7 @@
     .tickets { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
     .ticket { background:#222; padding:15px; text-align:center; border-radius:5px; }
 
-    button { padding:10px 16px; border:none; border-radius:5px; cursor:pointer; background:#ff3c5f; color:white; }
+    button { padding:10px 16px; border:none; border-radius:5px; cursor:pointer; background:#ff002f; color:white; }
 
     footer { text-align:center; padding:20px; background:#222; }
     footer a { margin:0 10px; color:white; }
@@ -92,12 +92,12 @@
   <div class="tickets">
     <div class="ticket">
       <h3>Regular</h3>
-      <p>Rp 500.000</p>
+      <p>Rp 1.500.000</p>
       <button>Buy Tickets</button>
     </div>
     <div class="ticket">
       <h3>VIP</h3>
-      <p>Rp 2.000.000</p>
+      <p>Rp 3.000.000</p>
       <button>Buy Tickets</button>
     </div>
   </div>
