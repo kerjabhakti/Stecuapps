@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konser Sederhana</title>
+    <link rel="stylesheet" href="warna.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <button onclick="scrollToArtis()">Artis Musik</button>
+        <button onclick="pesanWA('Tiket', '850.000')">Pesan Tiket (WA)</button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero fade-in">
+        <h1>Konser Manusia Hebat 2025</h1>
+        <p>5 - 10 Desember | Universitas Logistik dan Bisnis Internasional</p>
+    </header>
+
+    <!-- ARTIS -->
+    <section id="artis" class="section fade-in">
+        <h2>Daftar Artis Musik</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>COSMIC RAYS</h3>
+                <img src="cozy-home-interior-anime-style (1).jpg" alt="">
+            </div>
+
+            <div class="card">
+                <h3>DJ NEBULA</h3>
+                <img src="Cuplikan layar 2025-11-12 184407.png" alt="">
+            </div>
+
+            <div class="card">
+                <h3>Vortex Vixens</h3>
+                <img src="Gambar WhatsApp 2025-11-01 pukul 21.54.24_1c0f310f.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <h3>SynthWave Sailor</h3>
+                <img src="earth-planet-stars-blue-marble-wallpaper-preview.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- TIKET -->
+    <section class="section fade-in">
+        <h2>Harga Tiket</h2>
+
+        <div class="ticket">
+            <h3>Paket 1 Hari</h3>
+            <p>Rp 850.000</p>
+            <button class="pulse" onclick="pesanWA('1 Hari', '850.000')">Pesan via WhatsApp</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Konser Manusia Hebat</p>
+    </footer>
+
+    <script src="fron.js"></script>
+</body>
+</html>
