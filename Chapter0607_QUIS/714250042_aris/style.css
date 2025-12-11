@@ -17,9 +17,11 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            margin-left: 10px;
         }
         .accordion-item.active .accordion-content {
             max-height: 500px; /* Cukup besar untuk konten FAQ */
             padding-top: 0.5rem;
-            padding-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
         }
+        
