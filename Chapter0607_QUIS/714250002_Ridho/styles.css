@@ -5,7 +5,11 @@
   --container:1100px;
   --radius:12px;
   --transition:220ms;
-  --card-shadow: 0 8px 22px rgba(12,20,30,0.06);
+  --card-shadow: 0 12px 24px rgba(5, 112, 242, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *{box-sizing:border-box}
