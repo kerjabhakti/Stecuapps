@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrol Lampu Sederhana</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Nyala dan Matikan Lampu</h1>
+    <button 
+      onclick="document.getElementById('myImage').src='aset/pic_bulbon.gif'">
+      Nyalakan Lampunya
+    </button>
+    <img 
+        id="myImage" 
+        src="aset/pic_bulboff.gif" 
+        style="width: 100px;" 
+        alt="Bola Lampu"
+    >
+    <button 
+      onclick="document.getElementById('myImage').src='aset/pic_bulboff.gif'">
+      Matikan Lampunya
+    </button>
+  </body>
+</html>
