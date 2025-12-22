@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edu Learn</title>
+  <link rel="stylesheet" href="styleet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="sorkem">
+    <span class="close-btn" float: right; onclick="hidePopup()">&times;</span>
+    <h2 style="color:black; text-align:center;">Certificate</h2>
+    <img src="serti.png" style="width: 100%;">
+  </div>
+
+  <div id="glass"></div>
+  <div id="bwft"></div>
+  <form id="tutup" class="tutup" action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search2">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+
+  <div id="somba">
+    <a href="#">Sign up</a>
+    <a href="login.html">Login</a>
+    <a href="#" onclick="showPopup()">Certificate</a>
+    <a href="#">FAQ</a>
+  </div>
+
+  <div id="dark-overlay"></div>
+
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div id="sidebar">
+    <h2>Edu Learn</h2>
+    <a href="https:/">My AI</a>
+    <a href="https://drive.google.com/drie_lin">About</a>
+    <a href="https://goya-gambar/">Course Premium</a>
+    <a href="bal1.github.io/TEim/">Free course</a>
+    <a href="ht.github.io/jomba/">Faq</a>
+    <h3>@Edu Learn</h3>
+  </div>
+
+  <header>
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="bacdu.mp4" type="video/mp4"/>
+      </video>
+      <div class="overlay"></div>
+      <div class="moving-title">EduLearn Landing Page</div>
+      <a href="#cour" class="scroll-down">Kursus Unggulan Kami</a>
+    </div>
+  </header>
+  
+  <div id="informasi">
+    <h1>Mengapa Harus Kami?</h1>
+    <p>Karena kami berkomitmen memberikan layanan terbaik untuk setiap pengguna.
+      Dengan pengalaman dalam menyediakan solusi digital, pembelajaran, dan pendampingan proyek, kami memastikan setiap orang dapat berkembang sesuai tujuan mereka. Ribuan pengguna telah merasakan manfaatnya—mulai dari peningkatan kemampuan, penyelesaian tugas, hingga memahami materi yang sebelumnya terasa sulit.
+      Kami hadir untuk memberikan kemudahan, kualitas, dan dukungan yang konsisten, kapan pun Anda membutuhkannya.</p>
+      <div class="review-section fade-up">
+        <div class="left-text">
+            <h2>Apa Kata Mereka?</h2>
+            <p>Woaw kami sangat Terbantu dengan adanya ini!!</p>
+        </div>
+  
+        <div class="review-card">
+            <img src="https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png" class="profile-img" alt="profile">
+            <h3 class="review-name">Salah Satu Pengguna</h3>
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">"Website course ini sangat membantu meningkatkan kemampuan saya..."</p>
+        </div>
+  </div>
+  
+    <h2>Frequently asked questions</h2>
+<button onclick="teks1.hidden = !teks1.hidden">
+  Apa layanan yang tersedia di website ini?
+</button>
+
+<p id="teks1" hidden>
+  Kami menyediakan layanan sesuai minat dan bakat Anda, mulai dari konsultasi,
+  pembuatan proyek, hingga pendampingan belajar.
+  <br><br>
+  <button onclick="teks1.hidden = !teks1.hidden"><===</button>
+</p>
+
+
+<button onclick="teks2.hidden = !teks2.hidden">
+  Bagaimana cara memulai menggunakan layanan?
+</button>
+
+<p id="teks2" hidden>
+  Anda dapat menekan tombol "Tampil / Sembunyi" untuk melihat informasi awal, 
+  lalu mengikuti instruksi dan menghubungi kontak yang tersedia.
+  <br><br>
+  <button onclick="teks2.hidden = !teks2.hidden"><===</button>
+</p>
+
+
+<button onclick="teks3.hidden = !teks3.hidden">
+  Berapa biaya layanan yang ditawarkan?
+</button>
+
+<p id="teks3" hidden>
+  Biaya layanan bervariasi tergantung jenis layanan yang Anda pilih.
+  Kami menyediakan paket mulai dari gratis hingga premium.
+  <br><br>
+  <button onclick="teks3.hidden = !teks3.hidden"><===</button>
+</p>
+
+  </div>
+
+  <div id="cour">
+    <h1>Khusus Unggulan Kami</h1>
+  </div>
+
+  <section id="cour" class="cour-section">
+    <div class="cour-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrB6dHP6xtlORoRBoscGt1IF9lIXTXt6-L4A&s" alt="course 1">
+      <h3>Data Science Masterclass</h3>
+      <p>Pelajari Python, Machine Learning, dan visualisasi data dari dasar hingga tingkat lanjut.</p>
+      <button>DAFTAR SEKARANG</button>
+    </div>
+    <div class="cour-item">
+      <img src="2c.webp" alt="Course 2">
+      <h3>Full Stack Web Dev</h3>
+      <p>Bangun aplikasi web modern menggunakan React, Node.js, dan MongoDB. Proyek dunia nyata.</p>
+      <button>DAFTAR SEKARANG</button>
+    </div>
+    <div class="cour-item">
+      <img src="https://t4.ftcdn.net/jpg/09/53/51/13/360_F_953511326_ylHyWYS8fdPWictjEa0iS5ENkGZm8Ugm.jpg" alt="Course 3">
+      <h3>SEO & SEM Strategy</h3>
+      <p>Kuasai strategi pemasaran digital, SEO, Google Ads, dan optimasi media sosial untuk bisnis.</p>
+      <button>DAFTAR SEKARANG</button>
+    </div>
+    <div class="cour-item">
+      <img src="desg.png" alt="course 4">
+      <h3>Design</h3>
+      <p>Mempelajari prinsip desain modern, kreativitas visual, serta pembuatan aset grafis yang profesional untuk kebutuhan digital dan industri kreatif.</p>
+      <button>DAFTAR SEKARANG</button>
+    </div>
+    <div class="cour-item">
+      <img src="https://sainsdata.pens.ac.id/wp-content/uploads/2024/02/jurusan-sains-data.jpg" alt="course 5">
+      <h3>Data Science</h3>
+      <p>Menguasai analisis data, visualisasi, machine learning, dan pengolahan data untuk menghasilkan insight yang digunakan dalam pengambilan keputusan profesional..</p>
+      <button>DAFTAR SEKARANG</button>
+    </div>
+  </section>
+
+  <div id="info">
+    <h3>Ini adalah sebuah course sederhana</h3>
+    <p>Learn course Didirikan tahun 2025 </p>
+    <a href="https://you">Belajar dari mana saja, kapan saja. Tingkatkan skill Anda sekarang.</a>
+    <p>~ ~ ~ ~ ~</p>
+    <a href="https">kunjungi juga drive saya</a>
+    <p>Terimakasih banyak sudah mengunjungi situs ini</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Learncourse. All rights reserved.</p>
+  </footer>
+
+  <script src="java.js"></script>
+
+</body>
+</html>
