@@ -42,7 +42,6 @@
                 <option>Kristen</option>
                 <option>Hindu</option>
                 <option>Budha</option>
-                <option>Atheis</option>
             </select>
         </p>
 
