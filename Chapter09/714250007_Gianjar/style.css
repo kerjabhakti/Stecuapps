@@ -1,0 +1,192 @@
+/* ===== HALAMAN INDEX ===== */
+
+header {
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 28px;
+}
+
+header h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Navigasi */
+nav {
+    width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #16304a;
+}
+
+/* ===== HALAMAN FORM & LIST MABA ===== */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1f3a5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form container */
+form {
+    width: 500px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Fieldset */
+fieldset {
+    border: none;
+}
+
+/* Paragraf form */
+form p {
+    margin-bottom: 15px;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input & textarea */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Radio button */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Tombol submit */
+input[type="submit"] {
+    background-color: #1f3a5f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"]:hover {
+    background-color: #16304a;
+}
+/* Tabel */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #1f3a5f;
+    color: white;
+}
+
+/* Link aksi */
+a {
+    text-decoration: none;
+    color: #1f3a5f;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pesan status */
+.alert {
+    width: 90%;
+    margin: 20px auto;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Navigasi */
+.nav {
+    width: 90%;
+    margin: 20px auto;
+    text-align: right;
+}
