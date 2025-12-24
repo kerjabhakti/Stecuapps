@@ -68,7 +68,6 @@ function setupSmoothScroll(){
 function setupCTA(){
   document.querySelectorAll('.cta').forEach(btn => {
     btn.addEventListener('click', () => {
-      // example CTA: WA link (sesuaikan kalau perlu)
       window.location.href = 'https://wa.me/6282177737844';
     });
   });

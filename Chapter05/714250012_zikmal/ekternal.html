@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyobaan Bikin External JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 60px;
+      background-color: #f7f7f7;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 15px 0;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h2>🌐 Eksternal JavaScript</h2>
+  <p id="demo">Ini paragraf bukan dari file eksternal.</p>
+
+  <button type="button" onclick="myFunction()">Klik Aku</button>
+
+  <footer>
+    <p>Kaka tabola bale aduh aduh nona'e — "script.js"</p>
+    <p>(Udah jalan belum, Bang? — file "script.js")</p>
+  </footer>
+
+  <!-- Panggil file JavaScript eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
+

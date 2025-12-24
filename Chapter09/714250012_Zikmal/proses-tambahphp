@@ -1,0 +1,23 @@
+<?php
+include("config.php");
+
+if(isset($_POST['simpan'])){
+    $nama = $_POST['nama_sepatu'];
+    $merk = $_POST['merk'];
+    $ukuran = $_POST['ukuran'];
+    $warna = $_POST['warna'];
+    $harga = $_POST['harga'];
+
+    $sql = "INSERT INTO sepatu 
+    (nama_sepatu, merk, ukuran, warna, harga)
+    VALUES ('$nama', '$merk', '$ukuran', '$warna', '$harga')";
+
+    $query = mysqli_query($db, $sql);
+
+    if($query){
+        header('Location: list-sepatu.php');
+    } else {
+        die("Gagal menyimpan...");
+    }
+}
+?>

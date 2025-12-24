@@ -1,0 +1,115 @@
+/* style.css */
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #b8aa98, #b6a48f);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    color: #09055c;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Animasi background gradient */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Heading dengan animasi fade-in */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #09055c;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Container dengan animasi slide-in */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #b8aa98(1, 12, 16, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #b6a48f(76, 62, 124, 0.1);
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Animasi slide-in */
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Paragraf dengan animasi delay */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    animation: fadeIn 2s ease-in-out 0.5s both;
+}
+
+/* Tombol dengan animasi hover dan pulse */
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #09055c;
+    color: rgb(15, 34, 98);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+button:hover {
+    background-color: #090439;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasi pulse */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Footer dengan animasi fade-in dari bawah */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #09055c;
+    animation: fadeInUp 2s ease-in-out 1s both;
+}
+
+/* Animasi fade-in dari bawah */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivitas untuk mobile */
+@media (max-width: 600px) {
+    h1 { font-size: 2em; }
+    .container { padding: 20px; }
+    button { width: 100%; }
+}
