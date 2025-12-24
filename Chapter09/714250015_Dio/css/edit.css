@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #ffb347;
+    padding: 40px;
+}
+
+/* Judul */
+h3 {
+    text-align: center;
+    color: #ff8c00;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    background: #fff;
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Fieldset */
+fieldset { border: none; }
+
+/* Paragraf */
+p { margin-bottom: 15px; }
+
+/* Label */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Input & select */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Radio */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Tombol */
+input[type="submit"] {
+    width: 100%;
+    background: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
