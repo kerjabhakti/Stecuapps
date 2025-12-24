@@ -1,0 +1,92 @@
+/* Pengaturan Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigasi / Tombol Tambah */
+nav {
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Styling Tabel */
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Agar sudut border-radius terlihat */
+    border: none;
+}
+
+thead {
+    background-color: #343a40;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    font-weight: 600;
+}
+
+/* Baris Selang-Seling */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Styling Link Aksi (Edit & Hapus) */
+td a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+td a[href*="form-edit"] {
+    color: #ffc107;
+    border: 1px solid #ffc107;}

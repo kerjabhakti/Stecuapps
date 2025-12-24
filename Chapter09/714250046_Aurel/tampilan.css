@@ -1,0 +1,256 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body {
+    background: #edeff3;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* =====================
+   TABLE
+===================== */
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+thead {
+    background: #3b6ae1;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+tbody tr:hover {
+    background: #eef3ff;
+}
+
+a {
+    color: #1f3c88;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   HEADER
+================================ */
+header {
+    background: #1f2937;
+    color: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h3 {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+}
+
+/* ===============================
+   FORM CARD
+================================ */
+form {
+    max-width: 640px;
+    margin: auto;
+    background: #ffffff;
+    padding: 34px 38px;
+    border-radius: 12px;
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08),
+        0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* ===============================
+   FIELDSET
+================================ */
+fieldset {
+    border: none;
+}
+
+/* ===============================
+   FORM ROW
+================================ */
+p {
+    margin-bottom: 22px;
+}
+
+/* ===============================
+   LABEL
+================================ */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* ===============================
+   INPUT, TEXTAREA, SELECT
+================================ */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #fffafa;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #ffffff;
+    transition: all 0.2s ease;
+}
+
+/* TEXTAREA */
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* FOCUS STATE */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #1f2937;
+    box-shadow: 0 0 0 3px rgba(31, 41, 55, 0.15);
+}
+
+/* RADIO */
+input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #1f2937;
+}
+
+/* ===============================
+   SUBMIT BUTTON
+================================ */
+input[type="submit"] {
+    width: 100%;
+    background: #1f2937;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+input[type="submit"]:hover {
+    background: #111827;
+    transform: translateY(-1px);
+}
+
+/* ===============================
+   HELPER TEXT / INFO
+================================ */
+p small {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* =====================
+   MENU TITLE
+===================== */
+h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   NAVIGATION
+===================== */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #111827;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+nav ul li a:hover {
+    background: #1f2937;
+    transform: translateY(-1px);
+}
+
+/* =====================
+   STATUS MESSAGE
+===================== */
+p {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* SUKSES */
+p:has(+ *) {
+    background: #f5f5f5;
+    color: #944848;
+}
+
+/* ERROR DEFAULT */
+p[style*="color:red"] {
+    background: #fcf9f9;
+    color: #991b1b !important;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 640px) {
+    form {
+        margin: 20px;
+        padding: 28px;
+    }
+}
