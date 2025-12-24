@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d7ccc8, #efebe9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3e2723;
+}
+
+.container {
+    width: 520px;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 2px rgb(250, 249, 252);
+}
+
+/* animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4e342e;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5d4037;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #bcaaa4;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #6f4e37;
+    box-shadow: 0 0 5px rgba(111, 78, 55, 0.5);
+}
+
+/* button */
+.btn {
+    display: inline-block;
+    margin: 15px 5px 5px 0;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #6f4e37, #5d4037);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+table th {
+    background: #6f4e37;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 9px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+table tr:hover {
+    background-color: #efebe9;
+}
+
+.total {
+    margin-top: 15px;
+    padding: 12px;
+    background: #e8f5e9;
+    border-left: 6px solid #2e7d32;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    color: #2e7d32;
+}
+
+hr {
+    margin: 25px 0;
+    border: none;
+    height: 1px;
+    background: #bcaaa4;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
