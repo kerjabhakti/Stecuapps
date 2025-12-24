@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Latian</title>
+</head>
+<body>
+    <button onclick="nama()">Nama saya</button>
+    <p id="nama" style="display: none;">Amirah Fauziyyah Taaha</p>
+
+    <button onclick="kota()">Saya berasal dari</button>
+    <p id="kota" style="display: none;">Baubau</p>
+    
+    <button onclick="umur()">Umur saya adalah</button>
+    <p id="umur" style="display: none;">18 tahun</p>
+
+    <script>
+        function nama() {
+            var a = document.getElementById("nama")
+            a.style.display = 'block'
+
+            var b = document.getElementById("kota")
+            b.style.display = 'block'
+
+            var c = document.getElementById("umur")
+            c.style.display = 'block'
+        }
+    </script>
+</body>
+</html>

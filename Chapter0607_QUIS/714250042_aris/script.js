@@ -1,6 +1,6 @@
 // Data Kursus Unggulan (Data tetap sama)
         const featuredCourses = [
-            { id: 1, title: 'Mastering JavaScript Modern', mentor: 'Rizky Pratama', duration: '12 Jam', rating: 4.8, image: 'img/javascript.jpg' },
+            { id: 1, title: 'Mastering JavaScript Modern', mentor: 'Rizky Pratama', duration: '12 Jam', rating: 4.5, image: 'img/javascript.jpg' },
             { id: 2, title: 'Desain UI/UX dengan Figma', mentor: 'Citra Dewi', duration: '8 Jam', rating: 4.9, image: 'img/figma.jpg' },
             { id: 3, title: 'Data Science untuk Pemula', mentor: 'Aditya Wibowo', duration: '15 Jam', rating: 4.6, image: 'img/data.jpg' },
             { id: 4, title: 'Python Fundamental', mentor: 'Lia Susanti', duration: '10 Jam', rating: 4.7, image: 'img/python.jpg' },

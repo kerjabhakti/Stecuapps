@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Penggunaan API Location</title>
+</head>
+<body>
+
+<h1>Penggunaan API Location</h1>
+<p>Buat File location.html dan sisipkan JavaScript didalamnya</p>
+
+<p id="demo"></p>
+<script>
+const x = document.getElementById("demo");
+function getLocation() {
+    try {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } catch (err) {
+        x.innerHTML = err;
+    }
+}
+function showPosition(position) {
+    x.innerHTML =
+    "Latitude: " +
+    position.coords.latitude +
+    "<br>Longitude: " +
+    position.coords.longitude;
+}
+</script>
+
+<h2>JavaScript Menggunakan Geolocation</h2>
+<p>Klik button untuk menampilkan koordinat.</p>
+<button onclick="getLocation()">Klik Disini</button>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerHTML JavaScript</title>
+
+  <style>
+    .keranjang {
+      background-color: yellow;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .bellisekarang {
+      background-color: orange;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <p><strong> JUAL BAJU KOKO</strong></p>
+  <p> Price: Rp.135.000 </p>
+
+  <button class="keranjang" onclick="tambahKeranjang()">🛒 Tambahkan ke Keranjang</button>
+
+  <br><br>
+
+  <button class="bellisekarang" onclick="beliSekarang()">💸 Beli Sekarang</button>
+
+  <script>
+    function tambahKeranjang() {
+      alert("Tambahkan ke Keranjang");
+    }
+
+    function beliSekarang() {
+      alert("Kalem, loading heula...");
+      alert("Atos Mésér 😄");
+    }
+  </script>
+</body>
+</html>
