@@ -1,0 +1,13 @@
+body {
+    background: rgb(41, 93, 51);
+}
+
+.container{
+    background-color: white;
+    border-radius: 30px;
+}
+
+.size {
+    width: 800px;
+    height: auto;
+}
